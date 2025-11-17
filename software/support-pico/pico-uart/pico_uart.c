@@ -84,7 +84,7 @@ int main()
   while(1)
   {
     gpio_put(LED_PIN, 1);
-    uart_puts(uart0, "Hello, world!");
+    uart_puts(uart0, "Hello, world!\r\n");
     gpio_put(LED_PIN, 0);
 
     sleep_ms(250);
