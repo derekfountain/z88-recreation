@@ -1,0 +1,356 @@
+v1.0 board
+==========
+
+First board we got made up.
+---------------------------
+
+C302 is a 100uF filtering capacitor on the USB circuit. I put down
+a 0805 footprint, like all the other capacitors on the board. That
+size capacitance on that footprint is very expensive (50p to £1 each).
+Need to change the footprint for that capacitor to something much
+bigger.
+
+For v1.0 I bought a pile of 0.22uF for C302. I'll stack them 4 high.
+
+Need to change the footprint for that capacitor to something much
+bigger.
+
+
+
+C1001 and C1004 are 47uF in the audio circuit.  I put down
+a 0805 footprint, like all the other capacitors on the board. That
+size capacitance on that footprint is very expensive.
+Need to change the footprint for that capacitor to something much
+bigger.
+
+
+
+Diode D209 is the diode which powers the KB Pico, and hence the support
+Pico. I used my standard circuit which contains a 1206 footprint for
+the diode (I have lots). D501 is a Schottky diode in the the backlight
+circuit. For that one I used an 0805 footprint. Suggest standardising the
+footprint in the backlight circuit to the 1206 footprint, since I have
+lots of those and schottkys with the smaller footprint are rare and
+expensive.
+:: Done on v1.1 PCB
+
+
+
+The upper left mounting hole fits perfectly on its mounting post, with
+the top edge of the board butted up against the battery compartment
+plastic. That's the reference location for the PCB in the casing.
+
+The lower left support post locating hole needs moving 0.65mm
+to the left and 0.1mm up.
+:: Done on v1.1 PCB
+
+The middle support post locating hole needs moving 1.5mm to 
+the right. This hole is too small at 2.3mm radius. It should be 2.6mm
+radius. Making it 0.3mm bigger radius means it needs to move
+1.8mm to the right so it's left edge is correct. It also needs to
+move down 0.6mm.
+::Done on v1.1 PCB
+
+The right side support post locating hole needs moving up 1.0mm
+and 0.2mm right.
+::Done on v1.1 PCB
+
+The slot for the center post (between the Picos) needs to move approx
+1.5mm to the left. Not enough room, I managed to move it 1.0mm which
+will be enough.
+::Done on v1.1 PCB
+
+
+
+The footprint for the original reset switch is too low down to meet
+the hole in the case. It needs to be moved 1.2mm up the board towards
+the audio socket. It's a no pop, so maybe not essential.
+::Done on v1.1 PCB
+
+
+
+The audio jack lines up with the case hole correctly, but doesn't
+protrude far enough leftwards. The jack is sunken into the case too
+far and will make plugging a plug in rather difficult. Move the jack
+footprint 5mm leftward.
+::Done on v1.1 PCB
+
+
+
+The footprint for the flap switch is several mm too far down. It needs to
+move up byt 6.5mm. Caution here though, I missed a place to feed in a
+power cable, that flap slot might have to be it. No harm in moving the
+switch footprint, it's a NO POP.
+::Done on v1.1 PCB
+
+
+
+There's no power input point. A USB cable needs to be able to be fed into
+the case through an existing hole and get to the power module/recharge
+circuitry. I think the original flap-open switch slot is the only place
+that's possible.
+
+
+
+The footprint I've used for the SD card readers doesn't have holes for
+the locating lugs, which are on the SD card readers I've bought. Trimming
+the lugs off the readers with a scalpel wasn't hard, but I should find
+the correct footprints.
+
+
+
+The L_Coilcraft_XAL6020-XXX footprint for the backlight circuit's inductor
+is a bit too small. The Coilcraft device covers the pads completely which
+makes it hard to solder. The height (pads are 5.5mm high) is OK, but the
+width (also 5.5mm) needs to be a bit bigger.
+I'll change it to L_Coilcraft_XAL7070-XXX which is just over 6.5mm square.
+:: Done on v1.1 PCB
+
+
+
+The silkscreen for the MIPI connector says "Top Contact". Nope. Bottom
+contact is required.
+
+
+
+The hole for the top right mounting post is in the correct place, but the
+pillar on the underside of the keyboard which comes down onto it doesn't
+mate up directly. The pillar is wider and has a sunken area inside it, so
+it covers and seals down onto the post. The hole in the PCB isn't wide
+enough to accept that part of the pillar. One solution is to move
+aside the test points near the post hole, then make the post hole wider.
+Maybe, anyway. As it is the post and pillar trap the PCB which flexes
+slightly, but it then held in place. Maybe that's a good way of doing it?
+The original board has a hole the same as mine, and the PCB is trapped and
+held, so that appears to be the way it should be done. I can't see why
+that corner of the PCB doesn't sit down on the post quite right, the other
+corners do.
+Need to investigate.
+Looks like the bulky HDMI cable connector I had plugged into the front caused
+the problem.
+Need to investigate further and decide if anything needs changing.
+
+
+
+There's a spike on the underside of the keyboard plate which traps
+my flexicable which goes to the screen. The backlight circuit is right
+underneath, so the flexicable is pressed down into the circuitry which
+isn't doing it any good. In the original the ribbon cable to the LCD
+is slightly to the right of where my flexicable is and that spike doesn't
+come down on it, it's slightly off to one side and the spike comes down
+onto an empty area of PCB. I'm not sure what the purpose of the spike is
+other than to maybe hold that point of the PCB down. Since the spike is
+there, and it's causing a problem on my flexicable, something needs to
+move. I could move the flexicable connector along, but that might be
+rather tricky. Or I could move the backlight circuit along which would
+mean the spike still comes down on the flexicable, but only presses it
+onto a flat part of the PCB which would probably be harmless.
+Need to investigate.
+
+
+
+The USB's power control chip, the AP22653W6, has enable on pin 3. It's
+enable when high, on this part. I've got this fed from the FE1.1s pin
+25, PWRJ, which is active low. On the v1.1 PCB I cut the track linking
+PWRJ to EN, then fed +5V to EN. It didn't change behaviour, so there's
+still something else wrong, but this fix is required.
+
+
+
+The 3V3 decoupling capacitor (C308) should be 10uF according to the
+FE1.1s datasheet. I've got it as 10nF. I changed it on the board I've
+made up, needs fixing on the schematic.
+
+
+
+The loading capacitors on the crystal aren't necessary. The FE1.1s
+datasheet confirms they're internal to the IC. I removed them as part
+of a fault debug prcoess and the hub eventually worked fine without
+them. Needs fixing on schematic.
+
+
+
+The micro USB sockets aren't ideal. Almost every device these days has
+either a USB-A connector, or a USB-C connector. I've ended up buying
+micro USB-B male to USB-A female adapters so i can plug things in. 3x USB-A
+won't fit in that area, so maybe change them to USB-C sockets?
+
+
+
+There's the risk of USB sockets getting ripped off. So maybe the USB hardware
+should be on a separate board, which is easy to replace if it gets damaged?
+
+
+
+
+SW502 is the NOPOPed switch on the right side of the case, accessible via
+the side of the third ROM slot. It's originally the flap open/closed
+sensor switch. That's currently inaccessible because the PCB protrudes
+past it. If we want to use this switch the PCB section that extends into
+slot 3 will need to be reshaped a bit.
+
+
+
+The +5V in mounting hole fouls the SK7 keyboard connector.
+
+
+
+
+J201 is the 4 hole test points for the keyboard's USB connection. For some
+reason I didn't add +5V to the unused pin. Should add that, then a USB
+cable can be attached to it. Also, make that connector bigger, it's handy
+to solder USB cables wires to it.
+
+
+
+
+Might want to mark R201 and R202 as NOPOP if the keyboard USB connections
+to the keyboard Pico's GPIOs aren't being used. Or add solder jumpers.
+
+
+
+
+If I'm going to use a short USB cable to link the keyboard Pico to the
+PCB, I need some mounting points for the cables ends. Easy to solder ones,
+or maybe screw terminal ones so it can be easily removed.
+
+
+
+
+If I'm going to use a short USB cable to link the keyboard Pico to the
+PCB, the Schottyky diode D209 isn't necessary. The USB cable will need
+5V and GND supplies, and it's that which powers the Pico via its USB
+input. I suggest adding the specific solder pads even if they're maybe
+not needed. Somewhere near R201 and R202 would make most sense.
+
+Correction: the D209 Schottky diode is used to power the support Pico.
+So I can remove the connection to the KB Pico's VSYS, but I still need
+it for the connection to the Support Pico VSYS.
+
+It rather depends on how I do the next iteration. If it's going to be a
+Pico, then I need think about its power and USB link. If it's going to
+be a RP2040 on the board, the solution will be different.
+
+The modification I made to the v1.0 PCB was to cut the tracks which take
++5V from the Schottky diode to the KB Pico. Thus the KB Pico is powered
+only when the USB cable is connected. But that Schottky diode also
+powers the Support Pico, so I bridged from the diode over to the Support
+Pico VSYS.
+
+
+
+
+Diodes D201 to D208 are the wrong way round. They should have their
+anodes on the matrix side and cathodes pointing into the Pico.
+
+
+
+
+Create a 3V3 mount point from the keyboard Pico. For testing.
+
+
+
+Each of the 8 connections on SK7 needs to be pulled up to 3V3 via
+a 1K2 resistor. The 3V3 should be the KB Pico's reference.
+
+
+
+The button cell holder footprint isn't a useful one. It doesn't match
+either of the holders I have. It's large round centre pad is GND, the
+two small wings are +3V from the cell. The decent cell holder I bought
+is all metal, and requires 2 mounting holes. The cell negative sits on
+the large PCB pad. The cheapie cell holder I have is plastic with two
+metal tabs. I also requires mounting holes, there's no way to solder
+the pins without them. I can bodge something with a couple of flying
+wires for v1.0, but this needs looking at properly. See point below.
+
+The button cell holder footprint that I have fouls the keyboard
+connector. These things need moving apart a bit so there's more room.
+Double check this clearance when the new cell holder is chosen. See
+point above.
+
+Bit of a question mark over whether the button cell is required at all.
+The latest design is to have the lithium cell power the dual shift
+circuitry, and if that's running while the CM4 system is off we might as
+well use it to power the RTC as well. That would mean there's no RTC
+standby power if the lithium cell is completely drained, so not sure.
+Maybe use a jumper somewhere, so this stays as flexible as we can
+make it?
+
+
+
+Label the pins on the J401 connector on the PCB. I'm currently counting
+them off in order to use them.
+
+
+
+Check Y801 footprint size. The crystal I bought sits right over the top
+of it, making it hard to solder.
+
+
+
+The support Pico USB socket is blocked by the FE1.1s crystal. It can still
+be used via the SWD at the other end, but that crystal should be moved.
+
+
+
+
+I need power connectors. Assume the USB charging port is on the left side
+where the contrast wheel was. 2 flying wires are soldered to that (GND and
++5V from the USB.) Those 2 wires need to solder pads which connect to a
+terminal block. Into that terminal block are the 2 wires which connect those
+GND and +5V signals to the power module inputs (soldered at the power module
+end, screwed and hence removable at the PCB end). The flying wires could be
+short, then as tracks across the PCB to the terminals, if that's convenient.
+Undoing those terminal screws allows the PCB to be separated from the power
+module.
+
+Another 2 way terminal block is required to connect the output of the power
+module to the PCB. I can replace the big mounting points GND and +5V I
+currently have with a screw terminal connector, which would allow the PCB
+to be disconnected from the power module.
+
+Finding suitable terminal blocks which fit under the keyboard might be a bit
+tricky, but I think regular blue ones will fit near the top edge of the
+PCB where the 555 is currently located.
+
+
+
+
+Do I need a current control chip on the GPIO output (15 way) connector?
+What happens if I short 3V3 to GND on that connector?
+
+
+
+
+Add some solder pads for the keyboard membrane tail connections. If the
+tails don't fit into the connectors properly, being able to solder wires
+will be helpful.
+
+
+
+
+It needs a power switch to kill all power. I added one to the prototype
+in the VBAT +5V line. This would be for long term storage. With no button
+cell this would kill power to the RTC and it would need resetting. Switch
+needs to be accessible from the outside, so on flying wires inside the
+battery compartment, maybe.
+
+
+
+
+The side displays connector has a +5V signal. This needs thinking about.
+The side displays need to turn on without the CM4, so this 5V supply
+should probably be the same as used for the support pico?
+
+
+
+
+The 15 ways DSUB needs to connect to the PCB better. If I wire 15 short
+wires to the connector pins, they should really terminate on a plug,
+with a suitable socket on the PCB. That way the DSUB can connect to the
+main board via a pluggable lead or ribbon cable.
+
+
+
+A way to see the LEDs of the support and keyboard Picos would be handy.

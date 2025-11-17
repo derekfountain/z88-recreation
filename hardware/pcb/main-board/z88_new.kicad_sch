@@ -1,0 +1,757 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "fdce8012-5f35-4f58-8abb-80214b4af8fe")
+	(paper "A4")
+	(title_block
+		(title "Z88R - Z88 Recreated")
+		(date "2024-08-23")
+		(rev "20240823")
+		(company "Fountain and Menadue")
+	)
+	(lib_symbols)
+	(junction
+		(at 93.98 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3cedb10-76f0-4b7a-8dbf-7d763999e33d")
+	)
+	(wire
+		(pts
+			(xy 151.13 40.64) (xy 171.45 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05760f42-a778-42a8-9228-8ef8b2af7329")
+	)
+	(wire
+		(pts
+			(xy 151.13 43.18) (xy 171.45 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "223cd837-5551-40e3-b1aa-ad6900a6d5dd")
+	)
+	(wire
+		(pts
+			(xy 175.26 88.9) (xy 175.26 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f901dfd-a7b6-4389-bf4e-49a93bfbc39f")
+	)
+	(wire
+		(pts
+			(xy 104.14 116.84) (xy 104.14 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3139541e-980a-46c5-a35c-3e39d55c4181")
+	)
+	(wire
+		(pts
+			(xy 93.98 55.88) (xy 113.03 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d19529-89dc-453d-a51d-3f8de613de08")
+	)
+	(wire
+		(pts
+			(xy 162.56 148.59) (xy 227.33 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b7ee2f-55cb-4cb8-9fca-eaebe484d910")
+	)
+	(wire
+		(pts
+			(xy 104.14 116.84) (xy 93.98 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4b27c3-35d0-42cf-b592-9dc8a0b05918")
+	)
+	(wire
+		(pts
+			(xy 175.26 137.16) (xy 162.56 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7361d873-54ed-4bff-bf97-447f571ff314")
+	)
+	(wire
+		(pts
+			(xy 96.52 58.42) (xy 113.03 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b0aa0a1-9c60-406a-839c-78453726c5e7")
+	)
+	(wire
+		(pts
+			(xy 60.96 146.05) (xy 120.65 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "807de82a-cc20-4e37-81f9-a89034183509")
+	)
+	(wire
+		(pts
+			(xy 93.98 116.84) (xy 58.42 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8245770e-8e32-4e89-8747-19874c367448")
+	)
+	(wire
+		(pts
+			(xy 29.21 36.83) (xy 29.21 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84de6147-fa78-4214-90d3-492f90a0ab10")
+	)
+	(wire
+		(pts
+			(xy 162.56 140.97) (xy 227.33 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89540ec6-1775-4746-81cc-7a42bd9a43a6")
+	)
+	(wire
+		(pts
+			(xy 29.21 36.83) (xy 44.45 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8997dd5a-4b4f-4435-9594-960fac61ddd2")
+	)
+	(wire
+		(pts
+			(xy 80.01 53.34) (xy 113.03 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f9a00d8-6a05-43bf-9040-60cf8b5e062f")
+	)
+	(wire
+		(pts
+			(xy 96.52 132.08) (xy 96.52 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4fcd6cd-a56e-41cd-9ea6-f5c248001590")
+	)
+	(wire
+		(pts
+			(xy 104.14 143.51) (xy 120.65 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb8aebbf-db01-4bcf-ba64-da4422acc04b")
+	)
+	(wire
+		(pts
+			(xy 29.21 88.9) (xy 175.26 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc1141a4-b2af-4dca-9518-42d3349ac740")
+	)
+	(wire
+		(pts
+			(xy 93.98 55.88) (xy 93.98 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd038c74-0deb-4b53-be62-9638ab0182cb")
+	)
+	(wire
+		(pts
+			(xy 60.96 132.08) (xy 96.52 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e520fe-bb4d-456b-b6b4-a9dd19d3f5f9")
+	)
+	(sheet
+		(at 120.65 129.54)
+		(size 41.91 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "473923ee-4723-4e62-9c3b-b8c36a40674a")
+		(property "Sheetname" "Support_Pico"
+			(at 120.65 128.8284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "support_pico.kicad_sch"
+			(at 120.65 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SIDE_DISPLAYS_ENABLE" output
+			(at 162.56 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "86161faf-a7d4-408f-ada0-b6ca77ca1b19")
+		)
+		(pin "RTC_WAKE" input
+			(at 120.65 143.51 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "06783c4b-a4ed-4717-8cb1-95a2c8f646fc")
+		)
+		(pin "KB_WAKE_SUPPORT" input
+			(at 120.65 146.05 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b255e883-2c3e-4b6d-85b2-1e41b5db6fb8")
+		)
+		(pin "GLOBAL_ENABLE" output
+			(at 162.56 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1ce7b1a7-ffc3-4ac9-b8ca-0b463bce4912")
+		)
+		(pin "SUPPORT_PICO_SIG_TO_DISP" output
+			(at 162.56 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "951ead86-01db-410b-b296-58f89767a337")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 105.41)
+		(size 33.02 13.97)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "60965c3c-ccd5-4bfc-99df-a9198f5da7e0")
+		(property "Sheetname" "RTC"
+			(at 25.4 104.6984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rtc.kicad_sch"
+			(at 25.4 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "RTC_WAKE" output
+			(at 58.42 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "391723a5-336b-4bbe-83e6-cf3c17f3b3ac")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 128.27)
+		(size 35.56 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "611ade0a-1c77-478f-8f5a-a9824ea3de3f")
+		(property "Sheetname" "Keyboard"
+			(at 25.4 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "keyboard.kicad_sch"
+			(at 25.4 150.4446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "KB_WAKE_SUPPORT" output
+			(at 60.96 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7a3be624-5697-4143-98d2-d50b775c03e4")
+		)
+		(pin "KB_WAKE_POWER" output
+			(at 60.96 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e20e47e3-424e-4b76-badf-075bec43f7ee")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 39.37)
+		(size 38.1 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6434ccfa-7df9-4cde-838e-fd2ac0b6c30c")
+		(property "Sheetname" "Power"
+			(at 113.03 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 113.03 61.5446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BL_ANODE" output
+			(at 151.13 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "612be5eb-f33f-44a7-be09-2eee973791c9")
+		)
+		(pin "BL_CATHODE" output
+			(at 151.13 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dcedda10-641c-4998-8a30-5542542d90f4")
+		)
+		(pin "BL_PWM" input
+			(at 113.03 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "82151a77-161f-44a9-82ab-af817e034543")
+		)
+		(pin "KB_WAKE_POWER" input
+			(at 113.03 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "10edca40-14c7-4abe-83f5-44b0e50e9ea8")
+		)
+		(pin "RTC_WAKE" input
+			(at 113.03 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6bbde8cc-9d46-4db7-8ae1-fc603bd302fd")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 228.6 36.83)
+		(size 34.29 21.59)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "86bb6f64-e7a3-4051-823f-e8508ef11acf")
+		(property "Sheetname" "Audio"
+			(at 228.6 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 228.6 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 171.45 36.83)
+		(size 34.29 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8ddb6376-5a6e-41ae-9d91-9d7c87ad33ec")
+		(property "Sheetname" "CM4_HighSpeed"
+			(at 171.45 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm4_highspeed.kicad_sch"
+			(at 171.45 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BL_ANODE" input
+			(at 171.45 40.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9d0da279-440c-4b29-a63a-2dda0f35894c")
+		)
+		(pin "BL_CATHODE" input
+			(at 171.45 43.18 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "878528e6-3ccb-49bf-b36e-e964607bece8")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 204.47 80.01)
+		(size 39.37 22.86)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a77ef2bd-e252-49fb-bafe-76bf661b7991")
+		(property "Sheetname" "SWD MUX"
+			(at 204.47 79.2984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "swdmux.kicad_sch"
+			(at 204.47 103.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 227.33 135.89)
+		(size 34.29 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b021e735-62db-4e44-b9a4-83c0ced3ecfd")
+		(property "Sheetname" "Side Displays"
+			(at 227.33 135.1784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "displays.kicad_sch"
+			(at 227.33 156.7946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SIDE_DISPLAYS_ENABLE" input
+			(at 227.33 140.97 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ef80b0fa-ca1c-42ca-9888-f82e38eee389")
+		)
+		(pin "SUPPORT_PICO_SIG_TO_DISP" input
+			(at 227.33 148.59 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "af4a270d-72cd-4c0f-ad3d-c537c2b94d1c")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 44.45 26.67)
+		(size 35.56 57.15)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cd15a5fd-9317-456a-844b-3d9269d12c2d")
+		(property "Sheetname" "CM4_GPIO"
+			(at 44.45 25.9584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cm4_gpio.kicad_sch"
+			(at 44.45 84.4046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "BL_PWM" output
+			(at 80.01 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9e858da7-6193-4f7a-ba9b-a5f19e392798")
+		)
+		(pin "GLOBAL_ENABLE" input
+			(at 44.45 36.83 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "7f203f3c-aa72-4a15-9807-1e6eb08058d4")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
