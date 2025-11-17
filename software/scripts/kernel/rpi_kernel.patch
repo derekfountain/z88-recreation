@@ -1,0 +1,108 @@
+diff --git a/arch/arm/boot/dts/overlays/Makefile b/arch/arm/boot/dts/overlays/Makefile
+index cf0574a06..dc8ff2b8e 100644
+--- a/arch/arm/boot/dts/overlays/Makefile
++++ b/arch/arm/boot/dts/overlays/Makefile
+@@ -45,6 +45,8 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
+ 	crystalfontz-cfa050_pi_m.dtbo \
+ 	cutiepi-panel.dtbo \
+ 	dacberry400.dtbo \
++	devterm-panel.dtbo \
++	devterm-panel-uc.dtbo \
+ 	dht11.dtbo \
+ 	dionaudio-kiwi.dtbo \
+ 	dionaudio-loco.dtbo \
+diff --git a/drivers/gpu/drm/drm_connector.c b/drivers/gpu/drm/drm_connector.c
+index 476ea750a..0901d13f9 100644
+--- a/drivers/gpu/drm/drm_connector.c
++++ b/drivers/gpu/drm/drm_connector.c
+@@ -2621,6 +2621,10 @@ int drm_connector_set_panel_orientation(
+ 	struct drm_display_info *info = &connector->display_info;
+ 	struct drm_property *prop;
+ 
++#if 1
++        return 0;
++#endif
++
+ 	/* Already set? */
+ 	if (info->panel_orientation != DRM_MODE_PANEL_ORIENTATION_UNKNOWN)
+ 		return 0;
+diff --git a/drivers/gpu/drm/panel/Kconfig b/drivers/gpu/drm/panel/Kconfig
+index 307dd2c0f..058c27377 100644
+--- a/drivers/gpu/drm/panel/Kconfig
++++ b/drivers/gpu/drm/panel/Kconfig
+@@ -867,4 +867,28 @@ config DRM_PANEL_XINPENG_XPP055C272
+ 	  Say Y here if you want to enable support for the Xinpeng
+ 	  XPP055C272 controller for 720x1280 LCD panels with MIPI/RGB/SPI
+ 	  system interfaces.
++
++config DRM_PANEL_CWD686
++	tristate "CWD686 panel"
++	depends on OF
++	depends on DRM_MIPI_DSI
++	depends on BACKLIGHT_CLASS_DEVICE
++	help
++	  Say Y here if you want to enable support for CWD686 panel.
++	  The panel has a 480x1280 resolution and uses 24 bit RGB per pixel.
++
++	  To compile this driver as a module, choose M here: the module
++	  will be called panel-cwd686.
++
++config DRM_PANEL_CWU50
++	tristate "CWU50 panel"
++	depends on OF
++	depends on DRM_MIPI_DSI
++	depends on BACKLIGHT_CLASS_DEVICE
++	help
++	  Say Y here if you want to enable support for CWU50 panel.
++	  The panel has a 720x1280 resolution and uses 24 bit RGB per pixel.
++
++	  To compile this driver as a module, choose M here: the module
++	  will be called panel-cwu50.
+ endmenu
+diff --git a/drivers/gpu/drm/panel/Makefile b/drivers/gpu/drm/panel/Makefile
+index 9dd9b3503..9f39ed1a1 100644
+--- a/drivers/gpu/drm/panel/Makefile
++++ b/drivers/gpu/drm/panel/Makefile
+@@ -88,3 +88,5 @@ obj-$(CONFIG_DRM_PANEL_VISIONOX_R66451) += panel-visionox-r66451.o
+ obj-$(CONFIG_DRM_PANEL_WAVESHARE_TOUCHSCREEN) += panel-waveshare-dsi.o
+ obj-$(CONFIG_DRM_PANEL_WIDECHIPS_WS2401) += panel-widechips-ws2401.o
+ obj-$(CONFIG_DRM_PANEL_XINPENG_XPP055C272) += panel-xinpeng-xpp055c272.o
++obj-$(CONFIG_DRM_PANEL_CWD686) += panel-cwd686.o
++obj-$(CONFIG_DRM_PANEL_CWU50) += panel-cwu50.o
+diff --git a/drivers/gpu/drm/vc4/vc4_dsi.c b/drivers/gpu/drm/vc4/vc4_dsi.c
+index 894154d82..62d35d46c 100644
+--- a/drivers/gpu/drm/vc4/vc4_dsi.c
++++ b/drivers/gpu/drm/vc4/vc4_dsi.c
+@@ -753,7 +753,7 @@ static void vc4_dsi_ulps(struct vc4_dsi *dsi, bool ulps)
+ 			 (dsi->lanes > 1 ? DSI1_STAT_PHY_D1_STOP : 0) |
+ 			 (dsi->lanes > 2 ? DSI1_STAT_PHY_D2_STOP : 0) |
+ 			 (dsi->lanes > 3 ? DSI1_STAT_PHY_D3_STOP : 0));
+-	int ret;
++	int ret, i=0;
+ 	bool ulps_currently_enabled = (DSI_PORT_READ(PHY_AFEC0) &
+ 				       DSI_PORT_BIT(PHY_AFEC0_LATCH_ULPS));
+ 
+@@ -781,14 +781,16 @@ static void vc4_dsi_ulps(struct vc4_dsi *dsi, bool ulps)
+ 
+ 	DSI_PORT_WRITE(STAT, stat_stop);
+ 	DSI_PORT_WRITE(PHYC, DSI_PORT_READ(PHYC) & ~phyc_ulps);
+-	ret = wait_for((DSI_PORT_READ(STAT) & stat_stop) == stat_stop, 200);
+-	if (ret) {
+-		dev_warn(&dsi->pdev->dev,
+-			 "Timeout waiting for DSI STOP entry: STAT 0x%08x",
+-			 DSI_PORT_READ(STAT));
+-		DSI_PORT_WRITE(PHYC, DSI_PORT_READ(PHYC) & ~phyc_ulps);
+-		return;
++
++	while(wait_for((DSI_PORT_READ(STAT) & stat_stop) == stat_stop, 200)){
++	  if(i++ == 10) {
++	    DSI_PORT_WRITE(PHYC, DSI_PORT_READ(PHYC) & ~phyc_ulps);
++	    break;
++	    }
+ 	}
++	if(i > 0)
++	  dev_warn(&dsi->pdev->dev, "Timeout waiting for DSI STOP entry: STAT 0x%08x %d", DSI_PORT_READ(STAT), i);
++	return;
+ }
+ 
+ static u32
