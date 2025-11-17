@@ -41,6 +41,17 @@
  *
  * sudo openocd -f interface/picoprobe.cfg -f target/rp2040.cfg \
  *              -c "program ./pico_uart.elf verify reset exit"
+ *
+ * On the z88r:
+ *
+ * scp pico_uart.elf z88r:tmp
+ *
+ * sudo pinctrl set 23 op
+ * sudo pinctrl set 24 op
+ * sudo pinctrl set 23 dl; sudo pinctrl set 24 dl
+ * sudo openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program ./pico_uart.elf verify reset exit"
+ *
+ * sudo minicom -D /dev/ttyAMA0 -b 115200
  */
 
 #include <stdio.h>
@@ -73,7 +84,7 @@ int main()
   while(1)
   {
     gpio_put(LED_PIN, 1);
-    uart_puts(uart0, "Hello world!");
+    uart_puts(uart0, "Hello, world!");
     gpio_put(LED_PIN, 0);
 
     sleep_ms(250);
