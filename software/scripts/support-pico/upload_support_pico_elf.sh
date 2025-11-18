@@ -26,3 +26,5 @@ ssh $HOST "sudo pinctrl set 23 op ;\
 
 ssh $HOST "cd tmp && sudo openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg \
            -c \"program ./$FILE verify reset exit\""
+
+exit 0;
