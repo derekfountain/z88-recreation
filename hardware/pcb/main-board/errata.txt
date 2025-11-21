@@ -354,3 +354,18 @@ main board via a pluggable lead or ribbon cable.
 
 
 A way to see the LEDs of the support and keyboard Picos would be handy.
+
+
+
+There's no single GPIO link from the Support Pico to the CM4. That might
+be useful.
+
+
+
+The support pico is currently doubling up as an application Pico. That's
+not really working, it's doing stuff dedicated to the machine, like reading
+the SD card and listening for the RTC. So replace that Pico with an RP2040
+and consider it dedicated as supporting the CM4. Disconnect the external
+DSUB connector from it. The display picos become mandatory, and are the
+basis for user applications. One of those gets the external DSUB connection
+and they both get a side display each.
