@@ -369,3 +369,13 @@ and consider it dedicated as supporting the CM4. Disconnect the external
 DSUB connector from it. The display picos become mandatory, and are the
 basis for user applications. One of those gets the external DSUB connection
 and they both get a side display each.
+
+
+
+The display pico connector currently uses 5 lines to convey +5V to the
+display board. 5V can only come from the CM4, which might not be powered.
+It's the support Pico which decides to power on the display board, and
+it may do so without powering on the CM4. So 5V won't be available for
+that connector, it will have to be 3v7 from the battery.
+
+
