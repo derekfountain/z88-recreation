@@ -4597,6 +4597,16 @@
 		)
 		(uuid "e001d086-afaf-48af-80f3-8f3e1b39c907")
 	)
+	(label "PICO_PWR"
+		(at 106.68 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b58e027b-58e1-497d-b3c8-7e9987c8f11d")
+	)
 	(global_label "PICO1_UART_RX"
 		(shape output)
 		(at 220.98 67.31 0)

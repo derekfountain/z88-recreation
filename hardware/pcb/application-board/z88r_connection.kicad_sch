@@ -4778,6 +4778,16 @@
 		)
 		(uuid "00df6ba5-d5b9-45e4-9ca1-9681574ffa78")
 	)
+	(label "PCHAN_GATE"
+		(at 213.36 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "249d78fe-7be5-462f-a436-409af3556862")
+	)
 	(global_label "CM4_RX_FROM_PICO1"
 		(shape input)
 		(at 158.75 59.69 90)
