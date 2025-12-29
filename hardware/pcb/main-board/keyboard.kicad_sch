@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreated")
-		(date "2024-08-23")
-		(rev "20240823")
+		(date "2025-12-19")
+		(rev "20251219WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -2424,126 +2424,6 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -3607,17 +3487,6 @@
 		)
 		(uuid "72c38112-f6c8-4aca-909a-38e202c30479")
 	)
-	(text "5V supply comes from\nthe power module. It's\nswitched on when the\ndouble shift keys are\npressed."
-		(exclude_from_sim no)
-		(at 258.826 19.558 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "a1adb513-d454-4da8-9605-f2752e152ce1")
-	)
 	(text "Footprint for a 555, which was originally planned\nto wake the keyboard Pico every 10ms or so. The\nidea was dropped, but it might still be useful.\nNot sure where the 555's power will come from\nthough - the cell battery, like the RTC probably,\nbut it depends how we use it."
 		(exclude_from_sim no)
 		(at 213.36 152.4 0)
@@ -3638,6 +3507,28 @@
 			)
 		)
 		(uuid "f5dcad73-0207-4c51-a49a-96cc9b4d3076")
+	)
+	(global_label "PICO_5V"
+		(shape input)
+		(at 254 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "12b528d5-e8b5-4794-a6c4-314ed1a454ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.072 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "KB_A14"
 		(shape input)
@@ -4544,7 +4435,6 @@
 	(hierarchical_label "KB_WAKE_POWER"
 		(shape output)
 		(at 227.33 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4556,7 +4446,6 @@
 	(hierarchical_label "KB_WAKE_SUPPORT"
 		(shape output)
 		(at 227.33 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5830,71 +5719,6 @@
 			(project ""
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/611ade0a-1c77-478f-8f5a-a9824ea3de3f"
 					(reference "#PWR0203")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 254 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92a1c337-0e5a-4cb7-ac79-a483ea8ad887")
-		(property "Reference" "#PWR0202"
-			(at 254 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 254.381 22.2758 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 254 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba6bf3ba-d277-4048-923c-b3299e3d66de")
-		)
-		(instances
-			(project "z88_new"
-				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/611ade0a-1c77-478f-8f5a-a9824ea3de3f"
-					(reference "#PWR0202")
 					(unit 1)
 				)
 			)

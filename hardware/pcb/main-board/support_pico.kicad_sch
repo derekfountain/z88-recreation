@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreated")
-		(date "2024-08-23")
-		(rev "20240823")
+		(date "2025-12-19")
+		(rev "20251219WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -3130,8 +3130,8 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_GPIO2"
-		(shape bidirectional)
+	(global_label "LATCH_PICO_5V"
+		(shape output)
 		(at 58.42 43.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3142,7 +3142,7 @@
 		)
 		(uuid "07e637ba-c0e8-43b7-9e47-e8e24f6235fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.3931 43.18 0)
+			(at 41.6956 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3991,7 +3991,6 @@
 	(hierarchical_label "SUPPORT_PICO_SIG_TO_DISP"
 		(shape output)
 		(at 58.42 76.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4003,7 +4002,6 @@
 	(hierarchical_label "GLOBAL_ENABLE"
 		(shape input)
 		(at 226.06 118.11 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4015,7 +4013,6 @@
 	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
 		(shape output)
 		(at 58.42 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4027,7 +4024,6 @@
 	(hierarchical_label "RTC_WAKE"
 		(shape input)
 		(at 93.98 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4039,7 +4035,6 @@
 	(hierarchical_label "KB_WAKE_SUPPORT"
 		(shape input)
 		(at 93.98 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4051,7 +4046,6 @@
 	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
 		(shape input)
 		(at 226.06 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4063,7 +4057,6 @@
 	(hierarchical_label "GLOBAL_ENABLE"
 		(shape output)
 		(at 58.42 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

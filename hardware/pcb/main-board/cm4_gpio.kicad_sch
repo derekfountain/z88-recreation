@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreated")
-		(date "2024-08-23")
-		(rev "20240823")
+		(date "2025-12-19")
+		(rev "20251219WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreated")
-		(date "2024-08-23")
-		(rev "20240823")
+		(date "2025-12-19")
+		(rev "20251219WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -2801,7 +2801,6 @@
 	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
 		(shape input)
 		(at 58.42 25.4 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2813,7 +2812,6 @@
 	(hierarchical_label "SUPPORT_PICO_SIG_TO_DISP"
 		(shape input)
 		(at 58.42 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

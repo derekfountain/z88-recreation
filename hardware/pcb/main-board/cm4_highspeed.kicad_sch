@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreated")
-		(date "2024-08-23")
-		(rev "20240823")
+		(date "2025-12-19")
+		(rev "20251219WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -12201,7 +12201,6 @@
 	)
 	(label "HDMI0_CK_P"
 		(at 26.67 135.89 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12212,7 +12211,6 @@
 	)
 	(label "HDMI0_D0_P"
 		(at 234.95 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12223,7 +12221,6 @@
 	)
 	(label "DSI1_D1_P"
 		(at 91.44 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12234,7 +12231,6 @@
 	)
 	(label "D2_N"
 		(at 177.8 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12245,7 +12241,6 @@
 	)
 	(label "DSI1_D3_P"
 		(at 26.67 146.05 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12256,7 +12251,6 @@
 	)
 	(label "1V8_USB"
 		(at 175.26 33.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12267,7 +12261,6 @@
 	)
 	(label "D3_P"
 		(at 177.8 55.88 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12278,7 +12271,6 @@
 	)
 	(label "HDMI0_D2_N"
 		(at 234.95 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12289,7 +12281,6 @@
 	)
 	(label "DSI1_D0_N"
 		(at 86.36 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12300,7 +12291,6 @@
 	)
 	(label "HDMI_5v"
 		(at 251.46 26.67 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12311,7 +12301,6 @@
 	)
 	(label "DSI1_C_P"
 		(at 97.79 138.43 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12322,7 +12311,6 @@
 	)
 	(label "HDMI0_D1_N"
 		(at 234.95 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12333,7 +12321,6 @@
 	)
 	(label "HDMI0_D2_N"
 		(at 26.67 115.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12344,7 +12331,6 @@
 	)
 	(label "HDMI0_CK_P"
 		(at 234.95 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12355,7 +12341,6 @@
 	)
 	(label "D3_N"
 		(at 177.8 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12366,7 +12351,6 @@
 	)
 	(label "DSI1_D3_P"
 		(at 114.3 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12377,7 +12361,6 @@
 	)
 	(label "DSI1_C_P"
 		(at 99.06 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12388,7 +12371,6 @@
 	)
 	(label "HDMI0_D2_P"
 		(at 26.67 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12399,7 +12381,6 @@
 	)
 	(label "DSI1_D2_P"
 		(at 106.68 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12410,7 +12391,6 @@
 	)
 	(label "DSI1_D0_P"
 		(at 97.79 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12421,7 +12401,6 @@
 	)
 	(label "DSI1_C_N"
 		(at 97.79 135.89 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12432,7 +12411,6 @@
 	)
 	(label "DSI1_D2_N"
 		(at 97.79 143.51 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12443,7 +12421,6 @@
 	)
 	(label "DSI1_D0_N"
 		(at 97.79 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12454,7 +12431,6 @@
 	)
 	(label "DSI1_D1_N"
 		(at 93.98 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12465,7 +12441,6 @@
 	)
 	(label "HDMI0_D1_P"
 		(at 26.67 120.65 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12476,7 +12451,6 @@
 	)
 	(label "HDMI0_D0_P"
 		(at 26.67 128.27 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12487,7 +12461,6 @@
 	)
 	(label "HDMI0_D1_P"
 		(at 234.95 57.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12498,7 +12471,6 @@
 	)
 	(label "DSI1_D3_N"
 		(at 26.67 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12509,7 +12481,6 @@
 	)
 	(label "MIPI_STBYB"
 		(at 76.2 194.31 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12520,7 +12491,6 @@
 	)
 	(label "HDMI0_CK_N"
 		(at 234.95 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12531,7 +12501,6 @@
 	)
 	(label "D4_P"
 		(at 177.8 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12542,7 +12511,6 @@
 	)
 	(label "HDMI0_D1_N"
 		(at 26.67 123.19 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12553,7 +12521,6 @@
 	)
 	(label "DSI1_C_N"
 		(at 101.6 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12564,7 +12531,6 @@
 	)
 	(label "DSI1_D2_P"
 		(at 97.79 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12575,7 +12541,6 @@
 	)
 	(label "3V3_USB"
 		(at 154.94 17.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12586,7 +12551,6 @@
 	)
 	(label "ENABLE_USB_PWR"
 		(at 134.62 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12597,7 +12561,6 @@
 	)
 	(label "D2_P"
 		(at 177.8 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12608,7 +12571,6 @@
 	)
 	(label "HDMI0_D2_P"
 		(at 234.95 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12619,7 +12581,6 @@
 	)
 	(label "HDMI_5v"
 		(at 254 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12630,7 +12591,6 @@
 	)
 	(label "DSI1_D3_N"
 		(at 116.84 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12641,7 +12601,6 @@
 	)
 	(label "DSI1_D1_P"
 		(at 97.79 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12652,7 +12611,6 @@
 	)
 	(label "HDMI0_D0_N"
 		(at 234.95 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12663,7 +12621,6 @@
 	)
 	(label "HDMI0_D0_N"
 		(at 26.67 130.81 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12674,7 +12631,6 @@
 	)
 	(label "DSI1_D1_N"
 		(at 97.79 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12685,7 +12641,6 @@
 	)
 	(label "HDMI0_CK_N"
 		(at 26.67 138.43 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12696,7 +12651,6 @@
 	)
 	(label "DSI1_D2_N"
 		(at 109.22 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12707,7 +12661,6 @@
 	)
 	(label "D4_N"
 		(at 177.8 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12718,7 +12671,6 @@
 	)
 	(label "DSI1_D0_P"
 		(at 83.82 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13082,7 +13034,6 @@
 	(hierarchical_label "BL_CATHODE"
 		(shape input)
 		(at 33.02 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13094,7 +13045,6 @@
 	(hierarchical_label "BL_ANODE"
 		(shape input)
 		(at 25.4 181.61 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

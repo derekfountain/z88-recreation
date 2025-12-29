@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreated")
-		(date "2024-08-23")
-		(rev "20240823")
+		(date "2025-12-19")
+		(rev "20251219WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols)
@@ -629,6 +629,44 @@
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
 					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 189.23)
+		(size 20.32 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ae75d0ed-5378-48f8-a41e-0a8f44b6c646")
+		(property "Sheetname" "Picos Latch"
+			(at 50.8 188.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "picos_latch.kicad_sch"
+			(at 50.8 193.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "11")
 				)
 			)
 		)
