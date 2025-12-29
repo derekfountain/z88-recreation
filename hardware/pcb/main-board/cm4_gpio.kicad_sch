@@ -7714,9 +7714,9 @@
 		)
 		(uuid "854d00fe-d42f-4469-8722-90328d70751b")
 	)
-	(text "5V supply comes from\nthe power module. It's\nswitched on when the\ndouble shift keys are\npressed."
+	(text "5V supply comes from\nthe power module. It's\nswitched on when the\nsupport Pico enables it."
 		(exclude_from_sim no)
-		(at 141.986 130.556 0)
+		(at 140.97 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7914,6 +7914,28 @@
 		(uuid "1875d023-c561-49cc-bb71-c823808f83f0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 120.9853 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CM4_5V"
+		(shape input)
+		(at 121.92 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19a947ce-a8c3-473e-9e8d-77f513a724a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.4476 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10022,72 +10044,6 @@
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/cd15a5fd-9317-456a-844b-3d9269d12c2d"
 					(reference "TP409")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 121.92 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a756e2c-834a-4c48-81ed-b420577474d2")
-		(property "Reference" "#PWR0402"
-			(at 121.92 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 121.92 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 121.92 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "58836fb3-17c5-450f-8229-40470d2cfb36")
-		)
-		(instances
-			(project ""
-				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/cd15a5fd-9317-456a-844b-3d9269d12c2d"
-					(reference "#PWR0402")
 					(unit 1)
 				)
 			)

@@ -2031,7 +2031,7 @@
 		)
 	)
 	(junction
-		(at 190.5 46.99)
+		(at 195.58 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43e7ebc0-ceb0-4cff-8466-612017ad3eed")
@@ -2118,7 +2118,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 22.86) (xy 180.34 29.21)
+			(xy 185.42 26.67) (xy 185.42 33.02)
 		)
 		(stroke
 			(width 0)
@@ -2178,7 +2178,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 39.37) (xy 180.34 46.99)
+			(xy 185.42 43.18) (xy 185.42 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2378,7 +2378,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 22.86) (xy 180.34 22.86)
+			(xy 176.53 26.67) (xy 185.42 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2388,7 +2388,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 46.99) (xy 190.5 46.99)
+			(xy 185.42 50.8) (xy 195.58 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2418,7 +2418,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 46.99) (xy 198.12 46.99)
+			(xy 195.58 50.8) (xy 203.2 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2474,6 +2474,18 @@
 		)
 		(uuid dd816d8e-0f4a-4aa8-83fd-1947964131c0)
 	)
+	(rectangle
+		(start 146.05 13.97)
+		(end 217.17 67.31)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e07c0188-7341-4ae5-9fe0-07fae8f3b17f)
+	)
 	(text "Somewhere in here we're going to need power control. Ideally the double\nshift keys will act as a switch which completely disconnects the module's\n+5V output from the rest of the board."
 		(exclude_from_sim no)
 		(at 54.864 62.23 0)
@@ -2495,6 +2507,17 @@
 			(justify left)
 		)
 		(uuid "258a2ab6-bb2b-421c-a6f2-ee7aaafcdac6")
+	)
+	(text "This signal comes from the\nSupport Pico which asserts\nit when the CM4 is required\nto power up. Active high so\nthe CM4 can't power up\nunless the Support Pico is\npowered up."
+		(exclude_from_sim no)
+		(at 151.13 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27f55b6e-7776-4e4a-ac0e-62863a54c1fa")
 	)
 	(text "TP4056 charger module input. There's room for\nthe module in the Z88 case, just above the\nspeaker grille. For v1.0 assume we'll use a\nmodule; subsequent boards can have the TP4056\ncharger circuit on them."
 		(exclude_from_sim no)
@@ -2539,6 +2562,17 @@
 			(justify left)
 		)
 		(uuid "916126c9-ce02-4e5c-b48c-78d033c7d628")
+	)
+	(text "This is the power switch for the CM4. PICO_5V is the 5V\nsupply switched by the RTC/dual shifts circuit. The\noutput goes to the CM4 to power it up."
+		(exclude_from_sim no)
+		(at 147.32 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b2fb5e04-f8c2-4774-8e0c-58fc082cb03f")
 	)
 	(text "Separate bench PSU +5V\nconnection, should we need it."
 		(exclude_from_sim no)
@@ -2594,9 +2628,9 @@
 		)
 		(uuid "f1af2451-165e-4a2c-8e4b-c2ae0ceaa40e")
 	)
-	(global_label "CM4_TOGGLE"
+	(global_label "CM4_ON"
 		(shape input)
-		(at 172.72 34.29 180)
+		(at 177.8 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2606,7 +2640,7 @@
 		)
 		(uuid "19dc62ba-5df8-4814-9e4d-d5cb412217c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.4753 34.29 0)
+			(at 167.9095 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2618,7 +2652,7 @@
 	)
 	(global_label "PICO_5V"
 		(shape input)
-		(at 171.45 22.86 180)
+		(at 176.53 26.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2628,7 +2662,7 @@
 		)
 		(uuid "9229131d-2393-4a13-8f57-dd99c1a054b1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.378 22.86 0)
+			(at 166.458 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2674,7 @@
 	)
 	(global_label "CM4_5V"
 		(shape output)
-		(at 198.12 46.99 0)
+		(at 203.2 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2650,7 +2684,7 @@
 		)
 		(uuid "d5abf0ee-a5d1-405c-8d36-ccc5220aa07e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 207.6476 46.99 0)
+			(at 212.7276 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4347,7 +4381,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:DMG2302U")
-		(at 177.8 34.29 0)
+		(at 182.88 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4356,7 +4390,7 @@
 		(fields_autoplaced yes)
 		(uuid "e03e440c-b92d-4c1c-b939-0a67bc8bca10")
 		(property "Reference" "Q501"
-			(at 184.15 33.0199 0)
+			(at 189.23 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4365,7 +4399,7 @@
 			)
 		)
 		(property "Value" "DMG2302U"
-			(at 184.15 35.5599 0)
+			(at 189.23 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4374,7 +4408,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 182.88 36.195 0)
+			(at 187.96 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4419,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMG2302U.pdf"
-			(at 182.88 38.1 0)
+			(at 187.96 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4395,7 +4429,7 @@
 			)
 		)
 		(property "Description" "4.2A Id, 20V Vds, N-Channel MOSFET, SOT-23"
-			(at 177.8 34.29 0)
+			(at 182.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4627,7 +4661,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 190.5 46.99 0)
+		(at 195.58 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4636,7 +4670,7 @@
 		(fields_autoplaced yes)
 		(uuid "f50eebc1-17cf-45e7-9c08-b8f901a7717b")
 		(property "Reference" "#FLG502"
-			(at 190.5 45.085 0)
+			(at 195.58 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,7 +4679,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 190.5 41.91 0)
+			(at 195.58 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4653,7 +4687,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 46.99 0)
+			(at 195.58 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4662,7 +4696,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 46.99 0)
+			(at 195.58 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4671,7 +4705,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 190.5 46.99 0)
+			(at 195.58 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
