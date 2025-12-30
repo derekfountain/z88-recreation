@@ -740,6 +740,10 @@
     [
       "ae75d0ed-5378-48f8-a41e-0a8f44b6c646",
       "Picos Latch"
+    ],
+    [
+      "bd010eea-67e1-4f0f-9c21-5375d46a1c97",
+      "KB_RP2040"
     ]
   ],
   "text_variables": {}

@@ -5,9 +5,9 @@
 	(uuid "fdce8012-5f35-4f58-8abb-80214b4af8fe")
 	(paper "A4")
 	(title_block
-		(title "Z88R - Z88 Recreated")
-		(date "2025-12-19")
-		(rev "20251219WIP")
+		(title "Z88R - Z88 Recreation")
+		(date "2025-12-30")
+		(rev "20251230WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols)
@@ -725,6 +725,44 @@
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90.17 187.96)
+		(size 25.4 3.81)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bd010eea-67e1-4f0f-9c21-5375d46a1c97")
+		(property "Sheetname" "KB_RP2040"
+			(at 90.17 187.2484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "kb_rp2040.kicad_sch"
+			(at 90.17 192.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
+					(page "12")
 				)
 			)
 		)

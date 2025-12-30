@@ -5,9 +5,9 @@
 	(uuid "d65e50b8-0d3c-493b-962b-3bc2a2bfadd7")
 	(paper "A4")
 	(title_block
-		(title "Z88R - Z88 Recreated")
-		(date "2025-12-19")
-		(rev "20251219WIP")
+		(title "Z88R - Z88 Recreation")
+		(date "2025-12-30")
+		(rev "20251230WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
