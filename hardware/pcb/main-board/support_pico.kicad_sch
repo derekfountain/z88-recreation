@@ -1726,20 +1726,12 @@
 		(uuid "827ea8c5-2edc-4927-8d20-b22cac3f073b")
 	)
 	(no_connect
-		(at 58.42 48.26)
-		(uuid "9d60add2-de7e-4dc5-ba9f-552fe02aa2d4")
-	)
-	(no_connect
 		(at 58.42 60.96)
 		(uuid "a5c55e25-985d-4c11-83e0-c887ade0374b")
 	)
 	(no_connect
 		(at 58.42 55.88)
 		(uuid "c17aa218-a495-4f6e-a4d4-4feddda00e91")
-	)
-	(no_connect
-		(at 58.42 50.8)
-		(uuid "c634c73e-071b-4692-a8c6-9049b8b5f08a")
 	)
 	(no_connect
 		(at 58.42 58.42)
@@ -2250,7 +2242,7 @@
 	)
 	(global_label "LATCH_PICO_5V"
 		(shape output)
-		(at 58.42 43.18 180)
+		(at 58.42 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2260,7 +2252,7 @@
 		)
 		(uuid "07e637ba-c0e8-43b7-9e47-e8e24f6235fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 41.6956 43.18 0)
+			(at 41.6956 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2446,6 +2438,28 @@
 			)
 		)
 	)
+	(global_label "MAIN_I2C_DAT"
+		(shape output)
+		(at 58.42 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "546895cd-df38-4ea2-be2e-499c0a04340f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.268 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SUPPORT_PICO_SWD_IO"
 		(shape input)
 		(at 81.28 91.44 0)
@@ -2600,7 +2614,7 @@
 			)
 		)
 	)
-	(global_label "CM4_ON"
+	(global_label "MAIN_I2C_CLK"
 		(shape output)
 		(at 58.42 45.72 180)
 		(fields_autoplaced yes)
@@ -2610,9 +2624,31 @@
 			)
 			(justify right)
 		)
+		(uuid "a890b8e9-cb76-4eec-8b32-27b8713e450c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.0261 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CM4_ON"
+		(shape output)
+		(at 58.42 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
 		(uuid "af45fecb-ade4-4c11-88f9-04d277c75248")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.5295 45.72 0)
+			(at 48.5295 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)

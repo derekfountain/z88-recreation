@@ -9111,7 +9111,7 @@
 			)
 		)
 	)
-	(global_label "CM4_I2C_CLK"
+	(global_label "MAIN_I2C_CLK"
 		(shape input)
 		(at 246.38 60.96 0)
 		(fields_autoplaced yes)
@@ -9123,7 +9123,7 @@
 		)
 		(uuid "e24b820c-52b8-45b1-8223-6f2b268befd9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.2295 60.96 0)
+			(at 261.7739 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9243,7 +9243,7 @@
 			)
 		)
 	)
-	(global_label "CM4_I2C_CLK"
+	(global_label "MAIN_I2C_CLK"
 		(shape output)
 		(at 106.68 73.66 0)
 		(fields_autoplaced yes)
@@ -9255,7 +9255,7 @@
 		)
 		(uuid "ede5552f-26ee-4980-88bf-df3dc0426e21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.5295 73.66 0)
+			(at 122.0739 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9265,7 +9265,7 @@
 			)
 		)
 	)
-	(global_label "CM4_I2C_DAT"
+	(global_label "MAIN_I2C_DAT"
 		(shape output)
 		(at 45.72 73.66 180)
 		(fields_autoplaced yes)
@@ -9277,7 +9277,7 @@
 		)
 		(uuid "eee9a256-543d-49df-8483-77f02c3cbb97")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 31.1124 73.66 0)
+			(at 30.568 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9331,7 +9331,7 @@
 			)
 		)
 	)
-	(global_label "CM4_I2C_DAT"
+	(global_label "MAIN_I2C_DAT"
 		(shape input)
 		(at 233.68 60.96 180)
 		(fields_autoplaced yes)
@@ -9343,7 +9343,7 @@
 		)
 		(uuid "fe3538f2-1832-4826-97c5-ec29e6a76858")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.0724 60.96 0)
+			(at 218.528 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
