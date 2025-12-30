@@ -4676,7 +4676,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 38.1 40.64 270)
+		(at 38.1 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4684,7 +4684,7 @@
 		(dnp no)
 		(uuid "12d6bcb1-67aa-4b52-b4ef-419a514abc3e")
 		(property "Reference" "D203"
-			(at 26.67 39.878 90)
+			(at 49.53 41.402 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +4694,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 26.67 42.418 90)
+			(at 49.53 38.862 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4704,7 +4704,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 33.655 40.64 0)
+			(at 42.545 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4765,7 +4765,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 48.26 40.64 270)
+		(at 48.26 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4773,7 +4773,7 @@
 		(dnp no)
 		(uuid "1e0585b7-9b69-4ee8-9763-a58aeda6cfbc")
 		(property "Reference" "D207"
-			(at 36.83 39.878 90)
+			(at 59.69 41.402 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +4783,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 36.83 42.418 90)
+			(at 59.69 38.862 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,7 +4793,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 43.815 40.64 0)
+			(at 52.705 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5414,7 +5414,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 35.56 46.99 270)
+		(at 35.56 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5422,7 +5422,7 @@
 		(dnp no)
 		(uuid "7e3218c4-d516-4dfc-a274-39a39cf7b03f")
 		(property "Reference" "D202"
-			(at 24.13 46.228 90)
+			(at 46.99 47.752 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5432,7 +5432,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 24.13 48.768 90)
+			(at 46.99 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5442,7 +5442,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 31.115 46.99 0)
+			(at 40.005 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5503,7 +5503,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 40.64 46.99 270)
+		(at 40.64 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5511,7 +5511,7 @@
 		(dnp no)
 		(uuid "80770437-72a4-4626-a30e-0d2518de8937")
 		(property "Reference" "D204"
-			(at 29.21 46.228 90)
+			(at 52.07 47.752 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5521,7 +5521,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 29.21 48.768 90)
+			(at 52.07 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5531,7 +5531,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 36.195 46.99 0)
+			(at 45.085 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5812,7 +5812,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 43.18 40.64 270)
+		(at 43.18 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5820,7 +5820,7 @@
 		(dnp no)
 		(uuid "9c3ce75b-dee9-49d6-b1f5-7f33683c1d3c")
 		(property "Reference" "D205"
-			(at 31.75 39.878 90)
+			(at 54.61 41.402 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5830,7 +5830,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 31.75 42.418 90)
+			(at 54.61 38.862 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5840,7 +5840,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 38.735 40.64 0)
+			(at 47.625 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6159,7 +6159,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 45.72 46.99 270)
+		(at 45.72 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6167,7 +6167,7 @@
 		(dnp no)
 		(uuid "b3c8992a-65d0-4fe3-89ea-2af16681a147")
 		(property "Reference" "D206"
-			(at 34.29 46.228 90)
+			(at 57.15 47.752 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6177,7 +6177,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 34.29 48.768 90)
+			(at 57.15 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6187,7 +6187,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 41.275 46.99 0)
+			(at 50.165 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6383,7 +6383,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 33.02 40.64 270)
+		(at 33.02 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6391,7 +6391,7 @@
 		(dnp no)
 		(uuid "cbec62d9-389b-4aaf-83e8-863698524979")
 		(property "Reference" "D201"
-			(at 21.59 39.878 90)
+			(at 27.94 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,7 +6400,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 21.59 42.418 90)
+			(at 27.94 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6409,7 +6409,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 28.575 40.64 0)
+			(at 37.465 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +6537,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 50.8 46.99 270)
+		(at 50.8 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6545,7 +6545,7 @@
 		(dnp no)
 		(uuid "d9439901-e214-47f7-914f-e870d4c5a2dc")
 		(property "Reference" "D208"
-			(at 53.34 45.974 90)
+			(at 62.23 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6554,7 +6554,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 53.34 48.514 90)
+			(at 62.23 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6563,7 +6563,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 46.355 46.99 0)
+			(at 55.245 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)

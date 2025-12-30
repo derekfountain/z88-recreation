@@ -2174,6 +2174,17 @@
 		)
 		(uuid "0d16ee6d-a081-4b58-91ab-9b3ab537a6ae")
 	)
+	(text "The design is that the CM4 is the I2C bus master. The\nSupport Pico will only be bus master when the I2C is\noff, and since the Support Pico turns on the CM4 it's\nsafe to set them both up as bus masters. They can't\nclash, even if the I2C drivers don't support multi master."
+		(exclude_from_sim no)
+		(at 19.05 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "489f26b0-b40a-45e5-94ca-4eac63dc8218")
+	)
 	(text "PICO_PWR is on the keyboard Pico schematic. It's on the\ndownstream side of the diode which powers the Picos.\nThe two Picos are powered from that same source."
 		(exclude_from_sim no)
 		(at 99.06 31.75 0)

@@ -242,6 +242,7 @@ Pico VSYS.
 
 Diodes D201 to D208 are the wrong way round. They should have their
 anodes on the matrix side and cathodes pointing into the Pico.
+: Fixed on schematic for v1.1
 
 
 
