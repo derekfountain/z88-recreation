@@ -2366,6 +2366,10 @@
 		(uuid "ff23fc45-111b-4de9-a06e-a19fabb23539")
 	)
 	(no_connect
+		(at 43.18 85.09)
+		(uuid "607420fd-92e5-460d-8906-f4d095edfc04")
+	)
+	(no_connect
 		(at 104.14 176.53)
 		(uuid "a0e25885-6a09-47b4-ac1a-f2aab68a3a79")
 	)
@@ -3158,17 +3162,6 @@
 			(justify left)
 		)
 		(uuid "815c1224-fe3c-42f5-ae8a-2ea25715728b")
-	)
-	(hierarchical_label "KB_WAKE_POWER"
-		(shape input)
-		(at 43.18 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "883ea2ac-c059-4d87-81ad-a02571f8727c")
 	)
 	(hierarchical_label "BL_PWM"
 		(shape input)

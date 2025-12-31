@@ -597,6 +597,151 @@
 				)
 			)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "RP Pico:Pico"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1668,6 +1813,12 @@
 		(uuid "657568fc-ed65-4f6b-891b-75d9193f1707")
 	)
 	(junction
+		(at 106.68 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c0ed826-c04b-4a36-9a13-2c3bd2cf927c")
+	)
+	(junction
 		(at 120.65 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1697,6 +1848,12 @@
 		(color 0 0 0 0)
 		(uuid "eab2cd35-83e0-44fa-9418-335a9775d058")
 	)
+	(junction
+		(at 100.33 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcdecb9c-c513-4109-9b75-45d5b67cf0c5")
+	)
 	(no_connect
 		(at 58.42 63.5)
 		(uuid "1546fcb4-50fd-4235-90b6-0fe8f19e3f8c")
@@ -1712,6 +1869,10 @@
 	(no_connect
 		(at 93.98 55.88)
 		(uuid "3fe6d6e9-1683-4c05-acd5-a40043ba545c")
+	)
+	(no_connect
+		(at 93.98 68.58)
+		(uuid "5f54d697-81f3-4f53-b84d-689dd81b3c53")
 	)
 	(no_connect
 		(at 93.98 48.26)
@@ -1772,6 +1933,16 @@
 			(type default)
 		)
 		(uuid "10b2306b-2f13-4b02-8579-9fab28fc6d48")
+	)
+	(wire
+		(pts
+			(xy 93.98 38.1) (xy 100.33 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1114a051-900d-4a75-bd35-a67d4b028d74")
 	)
 	(polyline
 		(pts
@@ -1835,6 +2006,36 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 26.67) (xy 106.68 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5986d7d1-b900-4625-bf31-d435898966ac")
+	)
+	(wire
+		(pts
+			(xy 119.38 38.1) (xy 124.46 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "659f1b50-d523-465a-9d1c-e71a4c8b65f5")
+	)
+	(wire
+		(pts
+			(xy 100.33 38.1) (xy 106.68 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65eb8621-a708-43fb-add3-b1a8afcd0aa2")
+	)
+	(wire
+		(pts
 			(xy 132.08 45.72) (xy 128.27 45.72)
 		)
 		(stroke
@@ -1852,6 +2053,16 @@
 			(type default)
 		)
 		(uuid "66aace21-f0b0-4864-b61a-8d0b7c3035ed")
+	)
+	(wire
+		(pts
+			(xy 124.46 38.1) (xy 124.46 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf361e3-e87f-46ad-8f60-ebe49eed75af")
 	)
 	(polyline
 		(pts
@@ -2002,6 +2213,16 @@
 			(type default)
 		)
 		(uuid "ad50e757-985a-47ab-9443-e3eb27aeb6c7")
+	)
+	(wire
+		(pts
+			(xy 106.68 38.1) (xy 111.76 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1bb0d4c-fa22-46ea-ac74-15ba9ae0f3d3")
 	)
 	(wire
 		(pts
@@ -2185,17 +2406,6 @@
 		)
 		(uuid "489f26b0-b40a-45e5-94ca-4eac63dc8218")
 	)
-	(text "PICO_PWR is on the keyboard Pico schematic. It's on the\ndownstream side of the diode which powers the Picos.\nThe two Picos are powered from that same source."
-		(exclude_from_sim no)
-		(at 99.06 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "86f5379c-a781-4d13-89bf-155326766041")
-	)
 	(text "Card detect pin on our components"
 		(exclude_from_sim no)
 		(at 259.588 62.738 0)
@@ -2335,6 +2545,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PICO_5V"
+		(shape input)
+		(at 124.46 31.75 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "26b31303-9b43-4433-a2e1-0d2e6639458d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.532 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2603,28 +2835,6 @@
 			)
 		)
 	)
-	(global_label "PICO_PWR"
-		(shape input)
-		(at 93.98 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "89c69703-8197-4863-940b-8b63b465373b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.7453 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MAIN_I2C_CLK"
 		(shape output)
 		(at 58.42 45.72 180)
@@ -2757,6 +2967,28 @@
 			)
 		)
 	)
+	(global_label "PICO_PWR"
+		(shape input)
+		(at 106.68 26.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "de1fa517-2960-46bf-87a4-41b01a0414a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.5274 26.5906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI0_SD_SLAVE_ENABLE"
 		(shape output)
 		(at 93.98 81.28 0)
@@ -2822,17 +3054,6 @@
 			(justify left)
 		)
 		(uuid "6126d09c-18d1-4cbd-9d43-89588628dc90")
-	)
-	(hierarchical_label "KB_WAKE_SUPPORT"
-		(shape input)
-		(at 93.98 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7127240c-8339-4cfb-bb10-6b9d4d11a362")
 	)
 	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
 		(shape input)
@@ -3320,6 +3541,139 @@
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/473923ee-4723-4e62-9c3b-b8c36a40674a"
 					(reference "TP702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 115.57 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d672082-1cef-4874-b61f-0552fd4c2b5d")
+		(property "Reference" "D701"
+			(at 115.57 32.5882 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 115.57 34.8996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "526f93ca-4fc8-497e-8eed-4a785fb815fc")
+		)
+		(pin "2"
+			(uuid "c85a09f8-d2ab-410f-ace1-199ae4d6c35d")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/473923ee-4723-4e62-9c3b-b8c36a40674a"
+					(reference "D701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 100.33 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e4f533f-ea50-4045-a9ca-4426d767b265")
+		(property "Reference" "#FLG702"
+			(at 100.33 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 100.33 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 100.33 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01235149-ca96-4fa3-bfc2-3024c14940ec")
+		)
+		(instances
+			(project "z88_new"
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/473923ee-4723-4e62-9c3b-b8c36a40674a"
+					(reference "#FLG702")
 					(unit 1)
 				)
 			)

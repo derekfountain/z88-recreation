@@ -2105,7 +2105,7 @@
 		)
 		(uuid "37f03354-41dd-4eae-9605-f002f836bbd3")
 	)
-	(text "Single bit line driver, gives clean\nsignal to the support and power circuits"
+	(text "Single bit line driver, gives clean\nsignal to the power circuit"
 		(exclude_from_sim no)
 		(at 229.87 39.37 0)
 		(effects
@@ -2127,7 +2127,7 @@
 		)
 		(uuid "8b7585bb-41c6-4050-a904-3e7e8a7d3a52")
 	)
-	(text "Is it possible to have this part of the circuit only powered\nwhen the RTC_INT signal fires? Otherwise this line driver is\npermanently powered off the 3V3 cell battery."
+	(text "Is it possible to have this part of the circuit only powered\nwhen the RTC_INT signal fires? Otherwise this line driver is\npermanently powered off the battery."
 		(exclude_from_sim no)
 		(at 162.052 28.702 0)
 		(effects

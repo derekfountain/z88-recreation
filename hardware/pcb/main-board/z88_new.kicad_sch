@@ -99,26 +99,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 58.42) (xy 113.03 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b0aa0a1-9c60-406a-839c-78453726c5e7")
-	)
-	(wire
-		(pts
-			(xy 60.96 146.05) (xy 120.65 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "807de82a-cc20-4e37-81f9-a89034183509")
-	)
-	(wire
-		(pts
 			(xy 93.98 116.84) (xy 58.42 116.84)
 		)
 		(stroke
@@ -169,16 +149,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 132.08) (xy 96.52 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4fcd6cd-a56e-41cd-9ea6-f5c248001590")
-	)
-	(wire
-		(pts
 			(xy 104.14 143.51) (xy 120.65 143.51)
 		)
 		(stroke
@@ -206,16 +176,6 @@
 			(type default)
 		)
 		(uuid "bd038c74-0deb-4b53-be62-9638ab0182cb")
-	)
-	(wire
-		(pts
-			(xy 60.96 132.08) (xy 96.52 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2e520fe-bb4d-456b-b6b4-a9dd19d3f5f9")
 	)
 	(sheet
 		(at 120.65 129.54)
@@ -266,16 +226,6 @@
 				(justify left)
 			)
 			(uuid "06783c4b-a4ed-4717-8cb1-95a2c8f646fc")
-		)
-		(pin "KB_WAKE_SUPPORT" input
-			(at 120.65 146.05 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "b255e883-2c3e-4b6d-85b2-1e41b5db6fb8")
 		)
 		(pin "GLOBAL_ENABLE" output
 			(at 162.56 137.16 0)
@@ -383,26 +333,6 @@
 				(justify left top)
 			)
 		)
-		(pin "KB_WAKE_SUPPORT" output
-			(at 60.96 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "7a3be624-5697-4143-98d2-d50b775c03e4")
-		)
-		(pin "KB_WAKE_POWER" output
-			(at 60.96 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e20e47e3-424e-4b76-badf-075bec43f7ee")
-		)
 		(instances
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe"
@@ -470,16 +400,6 @@
 				(justify left)
 			)
 			(uuid "82151a77-161f-44a9-82ab-af817e034543")
-		)
-		(pin "KB_WAKE_POWER" input
-			(at 113.03 58.42 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "10edca40-14c7-4abe-83f5-44b0e50e9ea8")
 		)
 		(pin "RTC_WAKE" input
 			(at 113.03 55.88 180)
