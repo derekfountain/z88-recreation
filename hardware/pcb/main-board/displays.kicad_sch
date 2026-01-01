@@ -1769,6 +1769,126 @@
 				)
 			)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1915,8 +2035,8 @@
 		(uuid "f80d2190-9f11-4a07-b7ab-a314680f785b")
 	)
 	(no_connect
-		(at 58.42 104.14)
-		(uuid "243751e1-ab7c-4e1b-9512-e384b8c60a5f")
+		(at 58.42 27.94)
+		(uuid "10ed4e69-9208-4602-b46e-cf0d783d1676")
 	)
 	(no_connect
 		(at 58.42 83.82)
@@ -1927,12 +2047,12 @@
 		(uuid "37b9cd9e-adc1-4136-81d5-c014c23efe67")
 	)
 	(no_connect
-		(at 58.42 106.68)
-		(uuid "3d7b43ba-db8a-4654-a9ea-3d86c3131dba")
-	)
-	(no_connect
 		(at 58.42 93.98)
 		(uuid "5da14a75-dc62-4e5d-b1a4-13c19eb19cd5")
+	)
+	(no_connect
+		(at 58.42 111.76)
+		(uuid "60c83652-5234-4164-a687-3bd1f1a55aa0")
 	)
 	(no_connect
 		(at 58.42 68.58)
@@ -1973,10 +2093,6 @@
 	(no_connect
 		(at 58.42 99.06)
 		(uuid "dc75202b-fe76-4287-9cef-c05d7ed5da52")
-	)
-	(no_connect
-		(at 58.42 109.22)
-		(uuid "e1c1fca5-a928-48ec-b4f4-9e950a429786")
 	)
 	(no_connect
 		(at 58.42 63.5)
@@ -2148,6 +2264,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 120.65) (xy 43.18 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf98ad15-0005-4b2a-9e2d-9cb3ee087ead")
+	)
+	(wire
+		(pts
 			(xy 43.18 121.92) (xy 54.61 121.92)
 		)
 		(stroke
@@ -2197,20 +2323,9 @@
 		)
 		(uuid "0a0f0cb7-e8bb-4fd9-a8f8-0232694083ff")
 	)
-	(text "1V8 from the CM4. Not sure how useful this will ever be."
+	(text "+5V, permanently on, along with the RTC, etc.\nThis means the application board has permanent\npower and can drain the battery if its\ndesigner isn't careful."
 		(exclude_from_sim no)
-		(at 71.12 112.014 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "1eaff105-f2e4-4e01-8313-3971df52dc24")
-	)
-	(text "5V, swtiched on when dual shifts are pressed and\nthe keyboard/support RP2040s power up."
-		(exclude_from_sim no)
-		(at 71.374 120.396 0)
+		(at 71.12 119.38 0)
 		(effects
 			(font
 				(size 1 1)
@@ -2230,7 +2345,7 @@
 		)
 		(uuid "5c362bfb-3425-4b3d-b9d6-959b38deacef")
 	)
-	(text "UART connection from support Pico to display Pico"
+	(text "UART connection from support RP2040 to display Pico"
 		(exclude_from_sim no)
 		(at 71.628 37.084 0)
 		(effects
@@ -2263,7 +2378,7 @@
 		)
 		(uuid "ab419356-b313-48af-a04f-037676cd4600")
 	)
-	(text "Binary signal from support Pico, perhaps indicating which Pico is being addressed"
+	(text "Binary signal from support RP2040, perhaps indicating which Pico is being addressed"
 		(exclude_from_sim no)
 		(at 71.628 33.02 0)
 		(effects
@@ -2340,6 +2455,28 @@
 			)
 		)
 	)
+	(global_label "CM4_GPIO19"
+		(shape input)
+		(at 58.42 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "39ca240e-5169-4646-9778-a30cdf2a5f9f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.2962 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DISPLAY_PICO1_SWD_CLK"
 		(shape input)
 		(at 58.42 50.8 180)
@@ -2353,6 +2490,28 @@
 		(uuid "443912eb-3d50-49e9-a59d-b154b3cd05bf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 32.4428 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SP_RP_TX_TO_DISP"
+		(shape input)
+		(at 58.42 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4881fa6e-6b86-4c49-9391-a6842727997f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.3696 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2384,9 +2543,9 @@
 			)
 		)
 	)
-	(global_label "RP2040s_PWR"
+	(global_label "CM4_GPIO3"
 		(shape input)
-		(at 43.18 121.92 180)
+		(at 58.42 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2394,9 +2553,9 @@
 			)
 			(justify right)
 		)
-		(uuid "6effe104-90c2-4ad7-8c60-319aa3752c18")
+		(uuid "6098987c-1620-4101-a98b-b24a865cd8a8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.4839 121.92 0)
+			(at 45.5057 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,9 +2565,9 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_TX_TO_DISP"
+	(global_label "CM4_GPIO2"
 		(shape input)
-		(at 58.42 35.56 180)
+		(at 58.42 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2416,9 +2575,9 @@
 			)
 			(justify right)
 		)
-		(uuid "77520092-b578-49e9-9cfc-9ea57e3a1f03")
+		(uuid "70223368-1549-446c-a736-62cee7d7caec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.2657 35.56 0)
+			(at 45.5057 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,51 +2631,7 @@
 			)
 		)
 	)
-	(global_label "1V8_CM4"
-		(shape input)
-		(at 58.42 111.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9a3fb1aa-c03d-4063-bad8-ab4b1792b785")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.6829 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_3V3"
-		(shape input)
-		(at 58.42 27.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e955a7be-39cf-4349-a4a5-23949d44d4aa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.5228 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_RX_FROM_DISP"
+	(global_label "SP_RP_RX_FROM_DISP"
 		(shape input)
 		(at 58.42 38.1 180)
 		(fields_autoplaced yes)
@@ -2526,9 +2641,9 @@
 			)
 			(justify right)
 		)
-		(uuid "efa80ed5-7526-403a-84f8-0a48fd2a1837")
+		(uuid "fa4cd30c-776a-47ff-97c5-074c3f231d1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 27.1209 38.1 0)
+			(at 35.2248 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2549,7 +2664,7 @@
 		)
 		(uuid "5337ef21-39e3-4f98-922c-36acb26e7806")
 	)
-	(hierarchical_label "SUPPORT_PICO_SIG_TO_DISP"
+	(hierarchical_label "SP_RP_SIG_TO_DISP"
 		(shape input)
 		(at 58.42 33.02 180)
 		(effects
@@ -2559,6 +2674,72 @@
 			(justify right)
 		)
 		(uuid "f5b45a46-e71d-45e0-adb2-63fb4c2833cc")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 43.18 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75ff4b1c-05f0-4b17-989c-2d9268c1ecab")
+		(property "Reference" "#PWR602"
+			(at 43.18 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 43.18 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a243aa5b-9c28-4b87-a504-3aedc7d5f8c6")
+		)
+		(instances
+			(project ""
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/b021e735-62db-4e44-b9a4-83c0ced3ecfd"
+					(reference "#PWR602")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")

@@ -2629,7 +2629,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 125.73) (xy 120.65 125.73)
+			(xy 105.41 125.73) (xy 123.19 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3299,7 +3299,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 128.27) (xy 120.65 128.27)
+			(xy 105.41 128.27) (xy 123.19 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4057,7 +4057,7 @@
 	)
 	(text "These can be used to send keypresses\nto other parts of the system. Probably\nonly need one signal, not the pair"
 		(exclude_from_sim no)
-		(at 134.62 127 0)
+		(at 144.78 127 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4422,28 +4422,6 @@
 			)
 		)
 	)
-	(global_label "KB_GPIO_N"
-		(shape output)
-		(at 120.65 125.73 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "57207a9c-a197-4393-87d3-eeb7e0ced81a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.262 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "KB_D0"
 		(shape input)
 		(at 120.65 97.79 0)
@@ -4528,28 +4506,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "KB_GPIO_P"
-		(shape output)
-		(at 120.65 128.27 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9a638e0a-805a-4c44-8f82-0cd45fb78c76")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.2015 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -6313,6 +6269,76 @@
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/bd010eea-67e1-4f0f-9c21-5375d46a1c97"
 					(reference "R1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 128.27 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d3999ab-43e3-49c3-b0f5-cc5e23eeb43b")
+		(property "Reference" "J1202"
+			(at 130.81 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 130.81 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 128.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "be2233f6-20b7-4090-a39b-f8af087cfa8a")
+		)
+		(pin "1"
+			(uuid "7641d9d3-f9de-48bf-a0a9-7f6a3cac874d")
+		)
+		(instances
+			(project ""
+				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/bd010eea-67e1-4f0f-9c21-5375d46a1c97"
+					(reference "J1202")
 					(unit 1)
 				)
 			)

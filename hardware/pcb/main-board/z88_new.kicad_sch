@@ -237,7 +237,7 @@
 			)
 			(uuid "1ce7b1a7-ffc3-4ac9-b8ca-0b463bce4912")
 		)
-		(pin "SUPPORT_PICO_SIG_TO_DISP" output
+		(pin "SP_RP_SIG_TO_DISP" output
 			(at 162.56 148.59 0)
 			(effects
 				(font
@@ -631,7 +631,7 @@
 			)
 			(uuid "ef80b0fa-ca1c-42ca-9888-f82e38eee389")
 		)
-		(pin "SUPPORT_PICO_SIG_TO_DISP" input
+		(pin "SP_RP_SIG_TO_DISP" input
 			(at 227.33 148.59 180)
 			(effects
 				(font

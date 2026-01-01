@@ -5240,7 +5240,7 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_TX_TO_DISP"
+	(global_label "SP_RP_TX_TO_DISP"
 		(shape output)
 		(at 113.03 99.06 0)
 		(fields_autoplaced yes)
@@ -5252,7 +5252,7 @@
 		)
 		(uuid "7cae1a54-0425-489b-b485-8703f58f00d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.1843 99.06 0)
+			(at 133.0804 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5504,7 +5504,7 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_RX_FROM_DISP"
+	(global_label "SP_RP_RX_FROM_DISP"
 		(shape input)
 		(at 113.03 101.6 0)
 		(fields_autoplaced yes)
@@ -5516,7 +5516,7 @@
 		)
 		(uuid "d6fc882c-18e8-48dd-ba7a-95d7070bdd70")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.3291 101.6 0)
+			(at 136.2252 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,7 +5570,7 @@
 			)
 		)
 	)
-	(hierarchical_label "SUPPORT_PICO_SIG_TO_DISP"
+	(hierarchical_label "SP_RP_SIG_TO_DISP"
 		(shape output)
 		(at 113.03 104.14 0)
 		(effects
