@@ -2956,7 +2956,7 @@
 		)
 		(uuid "916126c9-ce02-4e5c-b48c-78d033c7d628")
 	)
-	(text "This is the power switch for the CM4. PICO_5V is the 5V\nsupply switched by the RTC/dual shifts circuit. The\noutput goes to the CM4 to power it up."
+	(text "This is the power switch for the CM4. RP2040_5V is the 5V\nsupply switched by the RTC/dual shifts circuit. The\noutput goes to the CM4 to power it up."
 		(exclude_from_sim no)
 		(at 147.32 17.78 0)
 		(effects

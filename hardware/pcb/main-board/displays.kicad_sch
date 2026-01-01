@@ -2312,7 +2312,7 @@
 		)
 		(uuid "ec881567-5f9c-428b-9db2-5a286149dd51")
 	)
-	(text "Signal from support Pico that the side displays should be turned on"
+	(text "Signal from support RP2040 that the side displays should be turned on"
 		(exclude_from_sim no)
 		(at 71.628 25.654 0)
 		(effects
@@ -2355,17 +2355,6 @@
 			(justify left)
 		)
 		(uuid "931b792c-d823-4815-bee0-609cd711c5d8")
-	)
-	(text "Support Pico GPIOs. These are exposed on the DE-15 connector.\nNot sure if it's useful for the display Picos to see these."
-		(exclude_from_sim no)
-		(at 71.12 71.374 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "a0aaa619-86e8-44f0-86ce-2755a75cd2f2")
 	)
 	(text "This connector will likely be a 40-way flex cable, since that's what we've\nused elsewhere.\n\nThe PCB this connects to is initially going to be for driving side displays,\nfor which 40 pins is likely too many. But actually that PCB could do anything,\nso 40 pins might be needed."
 		(exclude_from_sim no)

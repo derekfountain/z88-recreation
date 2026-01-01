@@ -4653,7 +4653,7 @@
 		)
 		(uuid "ffff46e9-576b-4734-909b-662dc9384e82")
 	)
-	(text "SD card for Z88 file system, cartridge images, etc.\nAlso for the instant-on mode, on the support Pico's\nnote taking apps (etc.)\n\nCM4 accesses this via the support Pico."
+	(text "SD card for Z88 file system, cartridge images, etc.\nAlso for the application board Pico's note taking\napps (etc.)\n\nCM4 accesses this via the support RP2040."
 		(exclude_from_sim no)
 		(at 180.34 22.86 0)
 		(effects
@@ -4664,7 +4664,7 @@
 		)
 		(uuid "0d16ee6d-a081-4b58-91ab-9b3ab537a6ae")
 	)
-	(text "The design is that the CM4 is the I2C bus master. The\nSupport Pico will only be bus master when the I2C is\noff, and since the Support Pico turns on the CM4 it's\nsafe to set them both up as bus masters. They can't\nclash, even if the I2C drivers don't support multi master."
+	(text "The design is that the CM4 is the I2C bus master. The\nSupport RP2040 will only be bus master when the I2C is\noff, and since the Support RP2040 turns on the CM4 it's\nsafe to set them both up as bus masters. They can't\nclash, even if the I2C drivers don't support multi master."
 		(exclude_from_sim no)
 		(at 13.97 186.69 0)
 		(effects
@@ -4752,7 +4752,7 @@
 		)
 		(uuid "d1dfba87-3473-4f13-ac09-929dea0678de")
 	)
-	(text "The keyboard Pico is always needed when this one is on,\nso the two Picos will use the same power source.\n\nThis Pico will be programmed with knowledge about the side\ndisplays (whether they exist, for a start). If the side displays\nPCB is connected, this Pico will send the signal to start it up."
+	(text "The keyboard RP2040 is always needed when this one is on,\nso the two RP2040s will use the same power source.\n\nThis RP2040 will be programmed with knowledge about the side\ndisplays (whether they exist, for a start). If the side displays\nPCB is connected, this RP2040 will send the signal to start it up."
 		(exclude_from_sim no)
 		(at 13.97 172.72 0)
 		(effects
@@ -4976,7 +4976,7 @@
 		)
 		(uuid "df18337c-59e3-4002-96f0-9a7ac289780b")
 	)
-	(global_label "TX_TO_SUPPORT_PICO"
+	(global_label "TX_TO_SP_RP"
 		(shape input)
 		(at 160.02 170.18 180)
 		(fields_autoplaced yes)
@@ -4988,7 +4988,7 @@
 		)
 		(uuid "040423cd-d1ee-4699-9f90-82c935db3544")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.1876 170.18 0)
+			(at 145.2915 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5064,7 +5064,7 @@
 			)
 		)
 	)
-	(global_label "RX_FROM_SUPPORT_PICO"
+	(global_label "RX_FROM_SP_RP"
 		(shape input)
 		(at 160.02 177.8 180)
 		(fields_autoplaced yes)
@@ -5076,7 +5076,7 @@
 		)
 		(uuid "17636eea-5524-4a7e-ae21-0f19edb4120a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.0428 177.8 0)
+			(at 142.1467 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5086,7 +5086,7 @@
 			)
 		)
 	)
-	(global_label "RX_FROM_SUPPORT_PICO"
+	(global_label "RX_FROM_SP_RP"
 		(shape output)
 		(at 113.03 71.12 0)
 		(fields_autoplaced yes)
@@ -5098,7 +5098,7 @@
 		)
 		(uuid "180b7c4c-4f38-4508-9591-d6a80df31b53")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.0072 71.12 0)
+			(at 130.9033 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +5196,7 @@
 			)
 		)
 	)
-	(global_label "TX_TO_SUPPORT_PICO"
+	(global_label "TX_TO_SP_RP"
 		(shape input)
 		(at 113.03 73.66 0)
 		(fields_autoplaced yes)
@@ -5208,7 +5208,7 @@
 		)
 		(uuid "3edd9639-62e1-45a7-ab65-bfc9eefcfb8a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.8624 73.66 0)
+			(at 127.7585 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)

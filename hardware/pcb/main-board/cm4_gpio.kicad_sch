@@ -7704,7 +7704,7 @@
 		)
 		(uuid "854d00fe-d42f-4469-8722-90328d70751b")
 	)
-	(text "5V supply comes from\nthe power module. It's\nswitched on when the\nsupport Pico enables it."
+	(text "5V supply comes from\nthe power module. It's\nswitched on when the\nsupport RP2040 enables it."
 		(exclude_from_sim no)
 		(at 140.97 132.08 0)
 		(effects
@@ -7957,7 +7957,7 @@
 			)
 		)
 	)
-	(global_label "RX_FROM_SUPPORT_PICO"
+	(global_label "RX_FROM_SP_RP"
 		(shape input)
 		(at 106.68 93.98 0)
 		(fields_autoplaced yes)
@@ -7969,7 +7969,7 @@
 		)
 		(uuid "1af689b0-bda7-4ece-b0df-9376c9efade7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.6572 93.98 0)
+			(at 124.5533 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8199,7 +8199,7 @@
 			)
 		)
 	)
-	(global_label "RX_FROM_SUPPORT_PICO"
+	(global_label "RX_FROM_SP_RP"
 		(shape input)
 		(at 246.38 38.1 0)
 		(fields_autoplaced yes)
@@ -8211,7 +8211,7 @@
 		)
 		(uuid "4e0b143f-52c1-4da0-a457-f4dc8b732222")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 272.3572 38.1 0)
+			(at 264.2533 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8551,7 +8551,7 @@
 			)
 		)
 	)
-	(global_label "TX_TO_SUPPORT_PICO"
+	(global_label "TX_TO_SP_RP"
 		(shape input)
 		(at 246.38 35.56 0)
 		(fields_autoplaced yes)
@@ -8563,7 +8563,7 @@
 		)
 		(uuid "97d89c97-781f-4fa0-ae7e-73b8e0fef30f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.2124 35.56 0)
+			(at 261.1085 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8771,7 +8771,7 @@
 			)
 		)
 	)
-	(global_label "TX_TO_SUPPORT_PICO"
+	(global_label "TX_TO_SP_RP"
 		(shape output)
 		(at 106.68 99.06 0)
 		(fields_autoplaced yes)
@@ -8783,7 +8783,7 @@
 		)
 		(uuid "be8f54a6-0186-498b-ab8a-a8c088b1b464")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.5124 99.06 0)
+			(at 121.4085 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
