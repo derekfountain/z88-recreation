@@ -1476,7 +1476,7 @@
 	)
 	(text "This signal comes from the Support RP2040, which asserts\nit as soon as it boots up.\n3V3, active high, FET is n-channel."
 		(exclude_from_sim no)
-		(at 20.32 52.07 0)
+		(at 19.05 50.8 0)
 		(effects
 			(font
 				(size 1 1)

@@ -2400,17 +2400,6 @@
 		)
 		(uuid "e1e97a9b-ab66-4af2-9c22-5a3f70bc9b61")
 	)
-	(text "Side displays can be driven from support Pico (maybe?) so they use the support Pico's 3V3"
-		(exclude_from_sim no)
-		(at 71.628 27.94 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "f309f1ce-c05b-4a48-b4c5-9124921e92d1")
-	)
 	(global_label "DISPLAY_PICO2_SWD_IO"
 		(shape input)
 		(at 58.42 58.42 180)

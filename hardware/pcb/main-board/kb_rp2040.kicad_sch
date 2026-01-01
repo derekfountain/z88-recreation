@@ -4664,7 +4664,7 @@
 			)
 		)
 	)
-	(global_label "RP2040_PWR"
+	(global_label "RP2040_3V3_PWR"
 		(shape input)
 		(at 86.36 26.67 180)
 		(fields_autoplaced yes)
@@ -4686,7 +4686,7 @@
 			)
 		)
 	)
-	(global_label "RP2040_PWR"
+	(global_label "RP2040_3V3_PWR"
 		(shape input)
 		(at 238.76 24.13 180)
 		(fields_autoplaced yes)

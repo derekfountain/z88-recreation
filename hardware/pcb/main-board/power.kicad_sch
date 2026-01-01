@@ -2833,7 +2833,7 @@
 	)
 	(rectangle
 		(start 83.82 72.39)
-		(end 176.53 100.33)
+		(end 179.07 100.33)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3032,7 +3032,7 @@
 			)
 		)
 	)
-	(global_label "RP2040_PWR"
+	(global_label "RP2040_3V3_PWR"
 		(shape output)
 		(at 158.75 86.36 0)
 		(fields_autoplaced yes)

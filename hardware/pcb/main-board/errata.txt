@@ -253,6 +253,7 @@ Create a 3V3 mount point from the keyboard Pico. For testing.
 
 Each of the 8 connections on SK7 needs to be pulled up to 3V3 via
 a 1K2 resistor. The 3V3 should be the KB Pico's reference.
+: Fixed on schematic for v1.1
 
 
 
