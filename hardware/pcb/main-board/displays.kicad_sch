@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreation")
-		(date "2025-12-30")
-		(rev "20251230WIP")
+		(date "2026-01-01")
+		(rev "20260101WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -1769,126 +1769,6 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -2039,6 +1919,14 @@
 		(uuid "243751e1-ab7c-4e1b-9512-e384b8c60a5f")
 	)
 	(no_connect
+		(at 58.42 83.82)
+		(uuid "33d8c8e9-650b-4b54-963a-382294ecdf18")
+	)
+	(no_connect
+		(at 58.42 81.28)
+		(uuid "37b9cd9e-adc1-4136-81d5-c014c23efe67")
+	)
+	(no_connect
 		(at 58.42 106.68)
 		(uuid "3d7b43ba-db8a-4654-a9ea-3d86c3131dba")
 	)
@@ -2047,12 +1935,32 @@
 		(uuid "5da14a75-dc62-4e5d-b1a4-13c19eb19cd5")
 	)
 	(no_connect
+		(at 58.42 68.58)
+		(uuid "754080de-d617-4b0c-9b8f-23d5cf17f34f")
+	)
+	(no_connect
 		(at 58.42 88.9)
 		(uuid "76d6620f-7cbb-4e4f-b8c8-f5ea223128f6")
 	)
 	(no_connect
+		(at 58.42 78.74)
+		(uuid "83ff4fbb-6100-4b17-85db-2a39e1ce7f4b")
+	)
+	(no_connect
+		(at 58.42 66.04)
+		(uuid "90644b03-a4c4-4798-a313-ac44085984c6")
+	)
+	(no_connect
 		(at 58.42 96.52)
 		(uuid "94159aa3-751c-48ff-acd8-2bbc06003980")
+	)
+	(no_connect
+		(at 58.42 76.2)
+		(uuid "9802de25-b2a3-479b-aeeb-e963ed4a98fd")
+	)
+	(no_connect
+		(at 58.42 71.12)
+		(uuid "9a827021-4764-40e2-8464-fed61de0ae4d")
 	)
 	(no_connect
 		(at 58.42 101.6)
@@ -2069,6 +1977,14 @@
 	(no_connect
 		(at 58.42 109.22)
 		(uuid "e1c1fca5-a928-48ec-b4f4-9e950a429786")
+	)
+	(no_connect
+		(at 58.42 63.5)
+		(uuid "eea65e09-0405-4859-b623-9de9ceea87c8")
+	)
+	(no_connect
+		(at 58.42 73.66)
+		(uuid "f409c139-5a93-4b5a-b15d-bc482ac3c4c4")
 	)
 	(wire
 		(pts
@@ -2232,7 +2148,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 121.92) (xy 54.61 121.92)
+			(xy 43.18 121.92) (xy 54.61 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2292,7 +2208,7 @@
 		)
 		(uuid "1eaff105-f2e4-4e01-8313-3971df52dc24")
 	)
-	(text "Assume 5V from the battery/USB will be swtiched on when\ndual shifts are pressed. The display PCB can have a\nLDO regulator fitted if it needs more than a few mA\nat 3V3."
+	(text "5V, swtiched on when dual shifts are pressed and\nthe keyboard/support RP2040s power up."
 		(exclude_from_sim no)
 		(at 71.374 120.396 0)
 		(effects
@@ -2380,50 +2296,6 @@
 		)
 		(uuid "f309f1ce-c05b-4a48-b4c5-9124921e92d1")
 	)
-	(global_label "SUPPORT_PICO_GPIO6"
-		(shape input)
-		(at 58.42 73.66 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0015b413-e99f-4022-a5d1-35c53b2a026d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_GPIO4"
-		(shape input)
-		(at 58.42 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "097bd544-008b-4355-bee6-a1e4c500b406")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "DISPLAY_PICO2_SWD_IO"
 		(shape input)
 		(at 58.42 58.42 180)
@@ -2437,28 +2309,6 @@
 		(uuid "0b2a9179-2758-464f-b48b-e06817e0b85a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 34.0756 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_GPIO10"
-		(shape input)
-		(at 58.42 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2d94d001-77b9-474d-a100-28f7e9cda2ca")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.1361 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2534,9 +2384,9 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_GPIO7"
+	(global_label "RP2040s_PWR"
 		(shape input)
-		(at 58.42 76.2 180)
+		(at 43.18 121.92 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2544,53 +2394,9 @@
 			)
 			(justify right)
 		)
-		(uuid "581d959b-50e7-47b6-8431-4a4fceb0694b")
+		(uuid "6effe104-90c2-4ad7-8c60-319aa3752c18")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_GPIO9"
-		(shape input)
-		(at 58.42 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7325f10e-ac00-4905-82d2-500263168db1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_GPIO2"
-		(shape input)
-		(at 58.42 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "73d396fd-5a80-446a-9ddb-971c1923b337")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 63.5 0)
+			(at 27.4839 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2644,28 +2450,6 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_GPIO3"
-		(shape input)
-		(at 58.42 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "888c7973-95aa-49f4-9650-15e246cf68d3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CM4_TX_TO_PICO1"
 		(shape input)
 		(at 58.42 43.18 180)
@@ -2701,50 +2485,6 @@
 		(uuid "9a3fb1aa-c03d-4063-bad8-ab4b1792b785")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 47.6829 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_GPIO8"
-		(shape input)
-		(at 58.42 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c0b91aed-5393-4c13-8a96-6a14b56cd227")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SUPPORT_PICO_GPIO5"
-		(shape input)
-		(at 58.42 71.12 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e79625b5-64d3-4c6e-ba2e-8161f7484038")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3456 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2819,72 +2559,6 @@
 			(justify right)
 		)
 		(uuid "f5b45a46-e71d-45e0-adb2-63fb4c2833cc")
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 34.29 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "218e95f9-c867-475c-88c4-3f281d187aed")
-		(property "Reference" "#PWR0602"
-			(at 34.29 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 34.29 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 34.29 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7c26200c-7815-41c4-a118-ab31b68890f4")
-		)
-		(instances
-			(project ""
-				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/b021e735-62db-4e44-b9a4-83c0ced3ecfd"
-					(reference "#PWR0602")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreation")
-		(date "2025-12-30")
-		(rev "20251230WIP")
+		(date "2026-01-01")
+		(rev "20260101WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -1474,7 +1474,7 @@
 		)
 		(uuid "1836074f-6026-4ef6-ad07-0910ef9cb960")
 	)
-	(text "This signal comes from the Support Pico, which asserts\nit as soon as it boots up.\n3V3, active high, FET is n-channel."
+	(text "This signal comes from the Support RP2040, which asserts\nit as soon as it boots up.\n3V3, active high, FET is n-channel."
 		(exclude_from_sim no)
 		(at 20.32 52.07 0)
 		(effects
@@ -1518,7 +1518,7 @@
 			)
 		)
 	)
-	(global_label "LATCH_PICO_5V"
+	(global_label "LATCH_RP2040S_5V"
 		(shape input)
 		(at 57.15 57.15 180)
 		(fields_autoplaced yes)
@@ -1530,7 +1530,7 @@
 		)
 		(uuid "dedd7f38-1f45-4eb2-9a78-8ea9a246eba0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.4256 57.15 0)
+			(at 36.3134 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1540,7 +1540,7 @@
 			)
 		)
 	)
-	(global_label "PICO_5V"
+	(global_label "RP2040S_5V"
 		(shape output)
 		(at 151.13 53.34 0)
 		(fields_autoplaced yes)
@@ -1552,7 +1552,7 @@
 		)
 		(uuid "e7c97de2-afd9-4d30-bf9c-18ef83998234")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.202 53.34 0)
+			(at 165.3142 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)

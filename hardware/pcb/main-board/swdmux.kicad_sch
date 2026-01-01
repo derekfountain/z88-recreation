@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreation")
-		(date "2025-12-30")
-		(rev "20251230WIP")
+		(date "2026-01-01")
+		(rev "20260101WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -1428,7 +1428,7 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_SWD_IO"
+	(global_label "SP_RP_SWD_IO"
 		(shape output)
 		(at 96.52 66.04 0)
 		(fields_autoplaced yes)
@@ -1440,7 +1440,7 @@
 		)
 		(uuid "238f4378-e5e2-4551-aa4e-a0b27eede9c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.7434 66.04 0)
+			(at 112.6395 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1560,7 +1560,7 @@
 			)
 		)
 	)
-	(global_label "SUPPORT_PICO_SWD_CLK"
+	(global_label "SP_RP_SWD_CLK"
 		(shape output)
 		(at 96.52 78.74 0)
 		(fields_autoplaced yes)
@@ -1572,7 +1572,7 @@
 		)
 		(uuid "8c5a30f1-d73b-4810-a374-fd8ac9fb3a58")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.3762 78.74 0)
+			(at 114.2723 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)

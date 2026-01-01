@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreation")
-		(date "2025-12-30")
-		(rev "20251230WIP")
+		(date "2026-01-01")
+		(rev "20260101WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols)
@@ -189,7 +189,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "473923ee-4723-4e62-9c3b-b8c36a40674a")
-		(property "Sheetname" "Support_Pico"
+		(property "Sheetname" "Support_RP2040"
 			(at 120.65 128.8284 0)
 			(effects
 				(font
@@ -565,7 +565,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "ae75d0ed-5378-48f8-a41e-0a8f44b6c646")
-		(property "Sheetname" "Picos Latch"
+		(property "Sheetname" "RP2020s Latch"
 			(at 50.8 188.5184 0)
 			(effects
 				(font

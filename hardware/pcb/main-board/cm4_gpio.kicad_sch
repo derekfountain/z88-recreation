@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Z88R - Z88 Recreation")
-		(date "2025-12-30")
-		(rev "20251230WIP")
+		(date "2026-01-01")
+		(rev "20260101WIP")
 		(company "Fountain and Menadue")
 	)
 	(lib_symbols
@@ -6608,16 +6608,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 134.62) (xy 121.92 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19be3dfb-be4b-498b-b862-2500eaa4ffbe")
-	)
-	(wire
-		(pts
 			(xy 204.47 147.32) (xy 213.36 147.32)
 		)
 		(stroke
@@ -7925,7 +7915,7 @@
 	)
 	(global_label "CM4_5V"
 		(shape input)
-		(at 121.92 133.35 0)
+		(at 121.92 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7935,7 +7925,7 @@
 		)
 		(uuid "19a947ce-a8c3-473e-9e8d-77f513a724a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.4476 133.35 0)
+			(at 131.4476 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
