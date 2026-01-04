@@ -20132,6 +20132,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Contact Downwards"
+		(at 214.15 138.1 0)
+		(layer "F.SilkS")
+		(uuid "9cc51192-314a-4bbe-af9d-999e93adb476")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Note how this connector is arranged relative to the one on the main board.\nThey are facing each other, so pin 1 on the main board (GND) is on the right\nside, and that matches up with pin 40 on this board. So pin 40 on this side\nis GND. The sequence of pins is essentially inverted so a straight cable\ntakes the signals out of one connector into the other."
 		(at 198.25 150.5 0)
 		(layer "Cmts.User")
