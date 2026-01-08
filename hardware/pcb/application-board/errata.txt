@@ -1,1 +1,13 @@
- 
+Diode D101 isn't required if the Picos aren't going to
+have USB cables plugged in. The present physical build
+is such that it's not possible to plug USB cables into
+the Pico's connectors, which makes that diode redundant.
+
+
+
+ET Q202 is oriented on the board the wrong way round.
+Schematic is correct, but I have the footprint with the
+drain and source the wrong way round.
+
+
+
