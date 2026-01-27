@@ -3,7 +3,7 @@ shelf_height     = 1.6;
 
 front_left_foot_width  = 10.0;
 front_left_foot_depth  = 21.3;
-front_left_foot_height = 4.8+shelf_height;
+front_left_foot_height = 5.8+shelf_height;
 translate( [0, 0, 0] )
 {
   difference()
@@ -22,7 +22,7 @@ translate( [0, 0, 0] )
 
 front_right_foot_width  = 4.45;
 front_right_foot_depth  = 15.5;  // Assumes 15 way D-SUB is in place
-front_right_foot_height = 4.8+shelf_height;
+front_right_foot_height = 5.8+shelf_height;
 translate( [11, 0, 0] )
 {
   difference()
@@ -39,7 +39,7 @@ translate( [11, 0, 0] )
 
 rear_left_foot_width  = 15.0;
 rear_left_foot_depth  = 13.5;
-rear_left_foot_height = 4.8+shelf_height;
+rear_left_foot_height = 5.8+shelf_height;
 translate( [16, 0, 0] )
 {
   difference()
@@ -61,7 +61,7 @@ translate( [16, 0, 0] )
 
 rear_right_foot_width  = 15.0;
 rear_right_foot_depth  = 13.0;
-rear_right_foot_height = 4.8+shelf_height;
+rear_right_foot_height = 5.8+shelf_height;
 translate( [32, 0, 0] )
 {
   difference()
