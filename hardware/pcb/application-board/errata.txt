@@ -11,3 +11,11 @@ drain and source the wrong way round.
 
 
 
+J101 and J103 are the 4-way connectors for the OLED screens.
+Because the screen have their connections at the top, those
+PCB connectors really should be halfway down the PCB facing
+the top. That removes the need to bend the 4-way ribbon
+cable.
+
+
+

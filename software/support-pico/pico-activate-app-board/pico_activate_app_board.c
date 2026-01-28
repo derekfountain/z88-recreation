@@ -73,14 +73,18 @@ int main()
   gpio_set_dir( ENABLE_APP_BOARD_PIN, GPIO_OUT );
   gpio_put(ENABLE_APP_BOARD_PIN, 0);
 
+  /* Originally a blink, this now just turns the app board on */
+  gpio_put(LED_PIN, 1);
+  gpio_put(ENABLE_APP_BOARD_PIN, 1);
+
   while(1)
   {
     gpio_put(LED_PIN, 1);
-    gpio_put(ENABLE_APP_BOARD_PIN, 1);
+    // gpio_put(ENABLE_APP_BOARD_PIN, 1);
 
-    sleep_ms(5000);
+    sleep_ms(2000);
 
-    gpio_put(ENABLE_APP_BOARD_PIN, 0);
+    //gpio_put(ENABLE_APP_BOARD_PIN, 1);
     gpio_put(LED_PIN, 0);
 
     sleep_ms(2000);
