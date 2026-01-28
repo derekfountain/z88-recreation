@@ -1,5 +1,5 @@
 /*
- * Pico application board example
+ * Pico application board OLED example
  * Copyright (C) 2026 Derek Fountain
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -28,10 +28,10 @@
  * With the RPi Debug Probe:
  * 
  * sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000" \
- *              -c "program app_board_blink.elf verify reset exit"
+ *              -c "program app_board_demo_oled.elf verify reset exit"
  * sudo openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000"
  *
- * gdb-multiarch app_board_blink.elf
+ * gdb-multiarch app_board_demo_oled.elf
  *  target remote localhost:3333
  *  load
  *  monitor reset init
@@ -40,16 +40,16 @@
  * With the home made Pico probe:
  *
  * sudo openocd -f interface/picoprobe.cfg -f target/rp2040.cfg \
- *              -c "program ./app_board_blink.elf verify reset exit"
+ *              -c "program ./app_board_demo_oled.elf verify reset exit"
  *
  * On the z88r:
  *
- * scp app_board_blink.elf z88r:tmp
+ * scp app_board_demo_oled.elf z88r:tmp
  *
  * sudo pinctrl set 23 op
  * sudo pinctrl set 24 op
  * sudo pinctrl set 23 dl; sudo pinctrl set 24 dh    (left side Pico)
- * sudo openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program ./app_board_blink.elf verify reset exit"
+ * sudo openocd -f interface/raspberrypi-swd.cfg -f target/rp2040.cfg -c "program ./app_board_demo_oled.elf verify reset exit"
  *
  */
 
@@ -71,10 +71,10 @@ int main()
   {
     gpio_put(LED_PIN, 1);
 
-    sleep_ms(1000);
+    sleep_ms(500);
 
     gpio_put(LED_PIN, 0);
 
-    sleep_ms(1000);
+    sleep_ms(500);
   }
 }
