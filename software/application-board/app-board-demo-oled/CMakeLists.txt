@@ -12,9 +12,11 @@ if (TARGET tinyusb_device)
 
   add_executable(app_board_demo_oled
     app_board_demo_oled.c
+    font.c	
+    sh1106.c
   )
 
-  target_link_libraries(app_board_demo_oled pico_stdlib)
+  target_link_libraries(app_board_demo_oled pico_stdlib hardware_i2c)
 
   pico_enable_stdio_usb(app_board_demo_oled 0)
   pico_enable_stdio_uart(app_board_demo_oled 0)

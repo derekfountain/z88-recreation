@@ -57,24 +57,57 @@
 #include "pico.h"
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
+#include <stdint.h>
+#include <string.h>
+#include "hardware/i2c.h"
+
+#include "font.h"
+#include "sh1106.h"
 
 const uint LED_PIN              = PICO_DEFAULT_LED_PIN;
 
 int main()
-{
-  bi_decl(bi_program_description("Pico application board blink example binary."));
+{  
+  bi_decl(bi_program_description("Pico application board OLED example binary."));
 
   gpio_init( LED_PIN );
   gpio_set_dir( LED_PIN, GPIO_OUT );
+  gpio_put(LED_PIN, 1);
+
+  i2c_init(i2c_default, 400 * 1000);
+  gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
+  gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
+  gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
+  gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
+    
+  SH1106_Init();
+
+  SH1106_GotoXY(0,0);
+  SH1106_Puts("X", &Font_7x10, 1);
+
+  SH1106_GotoXY(120,0);
+  SH1106_Puts("X", &Font_7x10, 1);
+
+  SH1106_GotoXY(0,53);
+  SH1106_Puts("X", &Font_7x10, 1);
+
+  SH1106_GotoXY(120,53);
+  SH1106_Puts("X", &Font_7x10, 1);
+
+  uint16_t x;
+  for( x=11; x<118; x++ )
+    SH1106_DrawPixel( x, 4, 1);
+
+  SH1106_UpdateScreen();
 
   while(1)
   {
     gpio_put(LED_PIN, 1);
 
-    sleep_ms(500);
+    sleep_ms(2000);
 
     gpio_put(LED_PIN, 0);
 
-    sleep_ms(500);
+    sleep_ms(2000);
   }
 }
