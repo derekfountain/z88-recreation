@@ -147,6 +147,7 @@ void SH1106_InvertDisplay (int i)
 
 void SH1106_DrawBitmap(int16_t x, int16_t y, const unsigned char* bitmap, int16_t w, int16_t h, uint16_t color)
 {
+    x=SH1106_APPLY_OFFSET(x);
 
     int16_t byteWidth = (w + 7) / 8; // Bitmap scanline pad = whole byte
     uint8_t byte = 0;
@@ -256,6 +257,8 @@ void SH1106_Fill(SH1106_COLOR_t color) {
 }
 
 void SH1106_DrawPixel(uint16_t x, uint16_t y, SH1106_COLOR_t color) {
+  x=SH1106_APPLY_OFFSET(x);
+
 	if (
 		x >= SH1106_WIDTH ||
 		y >= SH1106_HEIGHT
@@ -278,6 +281,8 @@ void SH1106_DrawPixel(uint16_t x, uint16_t y, SH1106_COLOR_t color) {
 }
 
 void SH1106_GotoXY(uint16_t x, uint16_t y) {
+  /* X offset is handled by subsequent putch calls */
+  
 	/* Set write pointers */
 	SH1106.CurrentX = x;
 	SH1106.CurrentY = y;

@@ -97,21 +97,29 @@ int main()
     
   SH1106_Init();
 
-  SH1106_GotoXY(0,0);
+  SH1106_GotoXY(1,1);
   SH1106_Puts("X", &Font_7x10, 1);
 
-  SH1106_GotoXY(120,0);
+  SH1106_GotoXY(120,1);
   SH1106_Puts("X", &Font_7x10, 1);
 
-  SH1106_GotoXY(0,53);
+  SH1106_GotoXY(1,53);
   SH1106_Puts("X", &Font_7x10, 1);
 
   SH1106_GotoXY(120,53);
   SH1106_Puts("X", &Font_7x10, 1);
 
-  uint16_t x;
-  for( x=11; x<118; x++ )
-    SH1106_DrawPixel( x, 4, 1);
+  uint16_t x,y;
+  for( x=0; x<128; x++ )
+  {
+    SH1106_DrawPixel( x,  0, 1);
+    SH1106_DrawPixel( x, 63, 1);
+  }
+  for( y=0; y<64; y++ )
+  {
+    SH1106_DrawPixel( 0,   y, 1);
+    SH1106_DrawPixel( 127, y, 1);
+  }
 
   SH1106_UpdateScreen();
 
@@ -119,10 +127,10 @@ int main()
   {
     gpio_put(LED_PIN, 1);
 
-    sleep_ms(2000);
+    sleep_ms(500);
 
     gpio_put(LED_PIN, 0);
 
-    sleep_ms(2000);
+    sleep_ms(500);
   }
 }

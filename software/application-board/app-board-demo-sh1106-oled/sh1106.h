@@ -38,7 +38,11 @@ https://github.com/derekfountain/pico-sh1106-oled
 /* SH1106 settings */
 /* SH1106 width in pixels */
 #ifndef SH1106_WIDTH
-#define SH1106_WIDTH            128
+#define SH1106_WIDTH            132
+#endif
+#ifndef SH1106_OFFSET
+#define SH1106_OFFSET           2
+#define SH1106_APPLY_OFFSET(x)  (x+SH1106_OFFSET)
 #endif
 /* SH1106 LCD height in pixels */
 #ifndef SH1106_HEIGHT
