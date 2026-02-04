@@ -1,12 +1,12 @@
-// Small bezel piece to cover the top part of the 1.3" side screen
+// Small bezel piece to cover the bottom part of the 1.3" side screen
  
 $fn=64;
 
 width        = 34.5;
-depth        = 5.0;
+depth        = 9.0;
 thickness    = 1.0;
 
-peg_height   = 2.5;
+peg_height   = 3.5;
 peg_diameter = 2.6;
 peg_radius   = peg_diameter/2;
 
