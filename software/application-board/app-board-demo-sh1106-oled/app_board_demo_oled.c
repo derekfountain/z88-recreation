@@ -95,6 +95,8 @@ int main()
   gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
   gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
     
+  sleep_ms( 500 );
+
   SH1106_Init();
 
   SH1106_GotoXY(1,1);
