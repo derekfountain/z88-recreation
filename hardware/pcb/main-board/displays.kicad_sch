@@ -2067,10 +2067,6 @@
 		(uuid "83ff4fbb-6100-4b17-85db-2a39e1ce7f4b")
 	)
 	(no_connect
-		(at 58.42 66.04)
-		(uuid "90644b03-a4c4-4798-a313-ac44085984c6")
-	)
-	(no_connect
 		(at 58.42 96.52)
 		(uuid "94159aa3-751c-48ff-acd8-2bbc06003980")
 	)
@@ -2093,10 +2089,6 @@
 	(no_connect
 		(at 58.42 99.06)
 		(uuid "dc75202b-fe76-4287-9cef-c05d7ed5da52")
-	)
-	(no_connect
-		(at 58.42 63.5)
-		(uuid "eea65e09-0405-4859-b623-9de9ceea87c8")
 	)
 	(no_connect
 		(at 58.42 73.66)
@@ -2345,7 +2337,18 @@
 		)
 		(uuid "5c362bfb-3425-4b3d-b9d6-959b38deacef")
 	)
-	(text "UART connection from support RP2040 to display Pico"
+	(text "Software connection from support RP2040 to application board Pico1"
+		(exclude_from_sim no)
+		(at 72.39 64.77 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "8177b5df-e088-48e2-8c8e-1fcf79745088")
+	)
+	(text "UART connection from support RP2040 to application board Pico0"
 		(exclude_from_sim no)
 		(at 71.628 37.084 0)
 		(effects
@@ -2402,6 +2405,28 @@
 		(uuid "0b2a9179-2758-464f-b48b-e06817e0b85a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 34.0756 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SP_RP_RX_FROM_APPB1"
+		(shape input)
+		(at 58.42 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e141d3b-1878-44b3-a7d6-f0fd471ede2f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.471 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2477,7 +2502,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_DISP"
+	(global_label "SP_RP_TX_TO_APPB0"
 		(shape input)
 		(at 58.42 35.56 180)
 		(fields_autoplaced yes)
@@ -2489,7 +2514,7 @@
 		)
 		(uuid "4881fa6e-6b86-4c49-9391-a6842727997f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.3696 35.56 0)
+			(at 36.6158 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2609,7 +2634,29 @@
 			)
 		)
 	)
-	(global_label "SP_RP_RX_FROM_DISP"
+	(global_label "SP_RP_TX_TO_APPB1"
+		(shape input)
+		(at 58.42 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9883b89b-7fae-4885-9204-c3d4d5f94709")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.6158 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SP_RP_RX_FROM_APPB0"
 		(shape input)
 		(at 58.42 38.1 180)
 		(fields_autoplaced yes)
@@ -2621,7 +2668,7 @@
 		)
 		(uuid "fa4cd30c-776a-47ff-97c5-074c3f231d1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.2248 38.1 0)
+			(at 33.471 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)

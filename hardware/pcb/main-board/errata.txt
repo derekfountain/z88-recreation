@@ -389,3 +389,22 @@ need to be on the same I2C bus. At the moment the CM4 is on the I2C bus
 with the RTC.
 : Fixed on schematic for v1.1. Support Pico GPIOs 2&3 are now on the
   I2C bus connecting to the RTC
+
+
+
+The support Pico needs a connection to the keyboard Pico, and a connection
+to the first Pico on the application board. Both those devices can't talk
+to the support Pico on one UART, so I need to use UARTs 0 and 1 on the
+support pico to support those links.
+: See next point
+
+
+
+The support Pico would ideally be able to talk directly to both the
+Picos on the application board. As of v1.0 it can only see the first
+Pico. Now that the support Pico's role has been streamlined, it's got
+a few GPIOs spare, and could therefore talk to the second application
+board Pico. But not via a UART, there's only 2 of those and one is used
+to talk to the CM4 while the other is used to talk to application board
+Pico 0. But transputer link should be possible for Pico1?
+: 

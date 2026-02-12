@@ -2958,10 +2958,6 @@
 		(uuid "9e672ad0-61bc-4737-b4b1-d40607f9f5e2")
 	)
 	(no_connect
-		(at 113.03 88.9)
-		(uuid "b6dcc13e-2d94-47f5-b0d8-78fb9ca9b260")
-	)
-	(no_connect
 		(at 113.03 139.7)
 		(uuid "c5e9a09b-2715-4a3b-927e-fd205114b562")
 	)
@@ -2988,10 +2984,6 @@
 	(no_connect
 		(at 113.03 93.98)
 		(uuid "f701784d-e7a4-4d4d-ad65-871dbaf9bb90")
-	)
-	(no_connect
-		(at 113.03 86.36)
-		(uuid "fd92501a-819d-4eb7-bb69-c31aab6e7348")
 	)
 	(wire
 		(pts
@@ -4664,6 +4656,17 @@
 		)
 		(uuid "0d16ee6d-a081-4b58-91ab-9b3ab537a6ae")
 	)
+	(text "Software link to App Board Pico1"
+		(exclude_from_sim no)
+		(at 138.43 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1787d750-6f55-42a6-9fab-7aa726b6db1a")
+	)
 	(text "The design is that the CM4 is the I2C bus master. The\nSupport RP2040 will only be bus master when the I2C is\noff, and since the Support RP2040 turns on the CM4 it's\nsafe to set them both up as bus masters. They can't\nclash, even if the I2C drivers don't support multi master."
 		(exclude_from_sim no)
 		(at 13.97 186.69 0)
@@ -4719,6 +4722,17 @@
 		)
 		(uuid "9f83fe62-0866-47f2-9bbc-071e822f6f54")
 	)
+	(text "UART1 to App Board Pico0"
+		(exclude_from_sim no)
+		(at 138.43 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a7ec3655-3138-49ec-9937-eda859c37a6c")
+	)
 	(text "Crystal"
 		(exclude_from_sim no)
 		(at 207.01 135.89 0)
@@ -4729,6 +4743,17 @@
 			(justify left bottom)
 		)
 		(uuid "c7b22b4f-e8f2-4d4c-9223-98c0e80b4516")
+	)
+	(text "I2C1 to RTC etc"
+		(exclude_from_sim no)
+		(at 138.43 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbdae3f8-0b84-4939-9e73-cc89846cabb7")
 	)
 	(text "Card detect pin on our components"
 		(exclude_from_sim no)
@@ -4762,6 +4787,17 @@
 			(justify left)
 		)
 		(uuid "d7e40fb9-a365-4475-be42-30ca476087ec")
+	)
+	(text "UART0 to CM4"
+		(exclude_from_sim no)
+		(at 138.43 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "da4efab6-d87b-4cfc-b3b9-e680967c5cdc")
 	)
 	(text "Flash, 16MB should be enough\nfor anything this RP2040 might do"
 		(exclude_from_sim no)
@@ -5000,7 +5036,7 @@
 	)
 	(global_label "LATCH_RP2040S_5V"
 		(shape output)
-		(at 113.03 81.28 0)
+		(at 113.03 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5010,7 +5046,7 @@
 		)
 		(uuid "07e637ba-c0e8-43b7-9e47-e8e24f6235fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.8666 81.28 0)
+			(at 133.8666 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5240,9 +5276,9 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_DISP"
+	(global_label "SP_RP_TX_TO_APPB_0"
 		(shape output)
-		(at 113.03 99.06 0)
+		(at 113.03 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5252,7 +5288,7 @@
 		)
 		(uuid "7cae1a54-0425-489b-b485-8703f58f00d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 133.0804 99.06 0)
+			(at 135.8018 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5396,7 +5432,7 @@
 	)
 	(global_label "CM4_ON"
 		(shape output)
-		(at 113.03 83.82 0)
+		(at 113.03 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5406,7 +5442,7 @@
 		)
 		(uuid "af45fecb-ade4-4c11-88f9-04d277c75248")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.9205 83.82 0)
+			(at 122.9205 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5482,6 +5518,28 @@
 			)
 		)
 	)
+	(global_label "SP_RP_TX_TO_APPB1"
+		(shape output)
+		(at 113.03 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc603044-fcbd-4609-9020-e2877f41d6e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.8342 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SD_CARD_DETECT"
 		(shape input)
 		(at 113.03 121.92 0)
@@ -5504,9 +5562,9 @@
 			)
 		)
 	)
-	(global_label "SP_RP_RX_FROM_DISP"
+	(global_label "SP_RP_RX_FROM_APPB0"
 		(shape input)
-		(at 113.03 101.6 0)
+		(at 113.03 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5516,7 +5574,29 @@
 		)
 		(uuid "d6fc882c-18e8-48dd-ba7a-95d7070bdd70")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 136.2252 101.6 0)
+			(at 137.979 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SP_RP_RX_FROM_APPB1"
+		(shape input)
+		(at 113.03 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db1fdf9f-7701-4c7b-bbda-df1f0cea85dc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.979 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
