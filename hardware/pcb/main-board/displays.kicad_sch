@@ -2689,7 +2689,7 @@
 		)
 		(uuid "5337ef21-39e3-4f98-922c-36acb26e7806")
 	)
-	(hierarchical_label "SP_RP_SIG_TO_DISP"
+	(hierarchical_label "SP_RP_SIG_TO_APPB"
 		(shape input)
 		(at 58.42 33.02 180)
 		(effects

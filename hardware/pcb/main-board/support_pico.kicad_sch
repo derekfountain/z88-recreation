@@ -4670,6 +4670,39 @@
 		)
 		(uuid "a7ec3655-3138-49ec-9937-eda859c37a6c")
 	)
+	(text "Pull high to power up the application board"
+		(exclude_from_sim no)
+		(at 138.43 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "afb3f8e6-a803-4fbb-b97e-a7fc5a5d7a54")
+	)
+	(text "Pull low to reboot the CM4"
+		(exclude_from_sim no)
+		(at 138.43 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba4c1c48-14f0-421d-abcd-0240ba890093")
+	)
+	(text "Binary signal to the application board"
+		(exclude_from_sim no)
+		(at 138.43 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c510ba4f-8ba8-4664-90ee-3e01975f3a45")
+	)
 	(text "Crystal"
 		(exclude_from_sim no)
 		(at 207.01 135.89 0)
@@ -5532,7 +5565,7 @@
 			)
 		)
 	)
-	(hierarchical_label "SP_RP_SIG_TO_DISP"
+	(hierarchical_label "SP_RP_SIG_TO_APPB"
 		(shape output)
 		(at 113.03 104.14 0)
 		(effects
