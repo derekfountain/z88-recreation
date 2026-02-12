@@ -392,19 +392,11 @@ with the RTC.
 
 
 
-The support Pico needs a connection to the keyboard Pico, and a connection
-to the first Pico on the application board. Both those devices can't talk
-to the support Pico on one UART, so I need to use UARTs 0 and 1 on the
-support pico to support those links.
-: See next point
-
-
-
-The support Pico would ideally be able to talk directly to both the
-Picos on the application board. As of v1.0 it can only see the first
-Pico. Now that the support Pico's role has been streamlined, it's got
-a few GPIOs spare, and could therefore talk to the second application
-board Pico. But not via a UART, there's only 2 of those and one is used
-to talk to the CM4 while the other is used to talk to application board
-Pico 0. But transputer link should be possible for Pico1?
-: 
+The support Pico no longer needs a connection to the keyboard Pico. Or
+at least I can't think of such reason at the moment. The support Pico
+needs a connection to the CM4 (so the CM4 can ask it to save data to
+the SD card), and a connection to both Picos on the application board.
+The CM4 link will be UART0, the first application board Pico will be
+UART1, and the second application board Pico will be 2 GPIOs using a
+software link such as the transputer one.
+: Fixed on schematic for v1.1.

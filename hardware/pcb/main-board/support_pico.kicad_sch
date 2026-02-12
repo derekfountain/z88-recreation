@@ -2934,6 +2934,10 @@
 		(uuid "0d34811e-c638-473a-8551-302184f12116")
 	)
 	(no_connect
+		(at 97.79 63.5)
+		(uuid "0dee63ed-8bfb-4b19-af8e-fe88b266c7ba")
+	)
+	(no_connect
 		(at 113.03 142.24)
 		(uuid "23ca2821-2870-4343-b1fa-06bc3f09bdc4")
 	)
@@ -2968,6 +2972,10 @@
 	(no_connect
 		(at 113.03 91.44)
 		(uuid "d9fd655b-637a-4f82-ad8e-73220e080509")
+	)
+	(no_connect
+		(at 97.79 60.96)
+		(uuid "dff58e9d-f458-4125-8eb3-b320b66f72d5")
 	)
 	(no_connect
 		(at 236.22 48.26)
@@ -3167,16 +3175,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 55.88) (xy 104.14 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a8ae536-bcb6-4289-9f50-ffda0e99df0d")
-	)
-	(wire
-		(pts
 			(xy 20.32 83.82) (xy 34.29 83.82)
 		)
 		(stroke
@@ -3184,16 +3182,6 @@
 			(type default)
 		)
 		(uuid "1e8b1625-b4da-4ee0-b332-19cfed108f72")
-	)
-	(wire
-		(pts
-			(xy 97.79 60.96) (xy 104.14 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ea5b915-2437-4d5d-8c5c-6922019d540f")
 	)
 	(wire
 		(pts
@@ -3615,16 +3603,6 @@
 		)
 		(uuid "6a24ce77-d758-41b5-977c-d03893e4e1f1")
 	)
-	(wire
-		(pts
-			(xy 116.84 63.5) (xy 130.81 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a45a9e3-dbba-49f0-ac34-04969c074669")
-	)
 	(polyline
 		(pts
 			(xy 179.07 13.97) (xy 179.07 71.12)
@@ -3977,16 +3955,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 55.88) (xy 130.81 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2c2ed01-e15c-4bb9-ba14-bd85119eaa12")
-	)
-	(wire
-		(pts
 			(xy 137.16 21.59) (xy 137.16 20.32)
 		)
 		(stroke
@@ -4264,16 +4232,6 @@
 			(type default)
 		)
 		(uuid "ccb5aa4d-067a-4142-a0ed-f0e943e85325")
-	)
-	(wire
-		(pts
-			(xy 104.14 55.88) (xy 109.22 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf44d03c-eb77-41da-b1ec-e67c1f07fbb6")
 	)
 	(wire
 		(pts
@@ -4567,16 +4525,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 63.5) (xy 109.22 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f79c4d07-25e8-47b8-af0f-f0c1eab96fc8")
-	)
-	(wire
-		(pts
 			(xy 69.85 40.64) (xy 72.39 40.64)
 		)
 		(stroke
@@ -4700,17 +4648,6 @@
 		)
 		(uuid "888adf94-2639-46e7-b12f-1ba2d09d7546")
 	)
-	(text "Make sure R1203 and R1204 are close to RP2040"
-		(exclude_from_sim no)
-		(at 116.84 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "94bb52f7-5e1e-4f29-b7a7-c8922058016a")
-	)
 	(text "Make sure C10 is close to pin 44 of RP2040"
 		(exclude_from_sim no)
 		(at 99.06 43.18 0)
@@ -4809,17 +4746,6 @@
 			(justify left bottom)
 		)
 		(uuid "e27de895-f78a-435a-a641-b70256d08bbf")
-	)
-	(text "These go to the USB hub"
-		(exclude_from_sim no)
-		(at 127 59.69 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left)
-		)
-		(uuid "e8f8d28e-a4b4-4a28-bc8e-1c740a4a1f14")
 	)
 	(text "SD card connector, SPI mode. Footprint matches the ones DF and AM bought from eBay,\nand have working on other Pico projects. Might need to tidy this up with more standard\ncomponents."
 		(exclude_from_sim no)
@@ -5298,28 +5224,6 @@
 			)
 		)
 	)
-	(global_label "KB_USB_P"
-		(shape output)
-		(at 130.81 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7ccde7d2-aebb-499c-8991-2991638d8dcf")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.6962 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SPI0_SD_CLK"
 		(shape input)
 		(at 236.22 40.64 180)
@@ -5597,28 +5501,6 @@
 		(uuid "db1fdf9f-7701-4c7b-bbda-df1f0cea85dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 137.979 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "KB_USB_N"
-		(shape output)
-		(at 130.81 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ef01950d-7774-4657-ab10-9e8f76d57f08")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.7567 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7054,73 +6936,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 113.03 63.5 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "81aaa4ad-cf9d-4d4f-a128-c0ecb7c47614")
-		(property "Reference" "R702"
-			(at 113.03 58.2422 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "27R"
-			(at 113.03 60.5536 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 113.03 61.722 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 113.03 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9b19e5a5-1154-43b1-995e-2a4789217067")
-		)
-		(pin "2"
-			(uuid "dede289e-9ee4-45c2-a033-2a6d46e41566")
-		)
-		(instances
-			(project "z88_new"
-				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/473923ee-4723-4e62-9c3b-b8c36a40674a"
-					(reference "R702")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 160.02 194.31 270)
 		(unit 1)
@@ -8471,73 +8286,6 @@
 			(project "z88_new"
 				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/473923ee-4723-4e62-9c3b-b8c36a40674a"
 					(reference "#PWR705")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 113.03 55.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f355315a-84e2-4bf1-a453-7c7191782c40")
-		(property "Reference" "R701"
-			(at 113.03 50.6222 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "27R"
-			(at 113.03 52.9336 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 113.03 54.102 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 113.03 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f4868fd0-dca6-42bb-82e4-a1975e4a7fc2")
-		)
-		(pin "2"
-			(uuid "793d59ce-7c06-458a-839a-fab4e215eee2")
-		)
-		(instances
-			(project "z88_new"
-				(path "/fdce8012-5f35-4f58-8abb-80214b4af8fe/473923ee-4723-4e62-9c3b-b8c36a40674a"
-					(reference "R701")
 					(unit 1)
 				)
 			)
