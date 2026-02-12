@@ -19,3 +19,8 @@ cable.
 
 
 
+On the main board v1.1 design I've added a software link from
+the support Pico to the right side Pico (Pico1). This can't be
+a UART because the support Pico doesn't have a spare one. But
+it could be a transputer link or similar. It's 2 pins on the
+main board connector which need to go to 2 pins on Pico1.
