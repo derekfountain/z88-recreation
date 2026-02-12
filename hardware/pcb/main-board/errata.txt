@@ -400,3 +400,12 @@ The CM4 link will be UART0, the first application board Pico will be
 UART1, and the second application board Pico will be 2 GPIOs using a
 software link such as the transputer one.
 : Fixed on schematic for v1.1.
+
+
+
+As per the above, I've added a UART connection to the application
+board Pico0 and a software link to the application board Pico1. But
+there's also a signal to the application board SP_RP_SIG_TO_DISP
+(might get renamed) which could be used as a switch to indicate which
+Pico the main board is talking to. It would need a MUX on the 
+application board. Not sure yet.

@@ -5554,7 +5554,7 @@
 		)
 		(uuid "54546c48-d7ad-4e06-a416-958575ff936e")
 	)
-	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
+	(hierarchical_label "APP_BOARD_ENABLE"
 		(shape output)
 		(at 113.03 109.22 0)
 		(effects
@@ -5576,7 +5576,7 @@
 		)
 		(uuid "6126d09c-18d1-4cbd-9d43-89588628dc90")
 	)
-	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
+	(hierarchical_label "APP_BOARD_ENABLE"
 		(shape input)
 		(at 160.02 194.31 180)
 		(effects

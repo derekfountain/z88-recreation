@@ -7068,6 +7068,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 93.98) (xy 166.37 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84502911-39dd-4606-9f88-81f4d0050321")
+	)
+	(wire
+		(pts
 			(xy 106.68 104.14) (xy 139.7 104.14)
 		)
 		(stroke
@@ -7445,6 +7455,16 @@
 			(type solid)
 		)
 		(uuid "d1142612-5953-4e02-b36a-11fd26f36675")
+	)
+	(wire
+		(pts
+			(xy 167.64 101.6) (xy 166.37 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d39f8850-7c7b-4b08-8363-38d3cec0aefe")
 	)
 	(wire
 		(pts
@@ -7869,7 +7889,7 @@
 			)
 		)
 	)
-	(global_label "CM4_TX_TO_PICO1"
+	(global_label "CM4_TX_TO_APPB0"
 		(shape output)
 		(at 45.72 96.52 180)
 		(fields_autoplaced yes)
@@ -7881,7 +7901,7 @@
 		)
 		(uuid "1731eb76-3866-4951-bc20-9b9e83019e5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.3953 96.52 0)
+			(at 25.972 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8045,7 +8065,7 @@
 			)
 		)
 	)
-	(global_label "CM4_RX_FROM_PICO1"
+	(global_label "CM4_RX_FROM_APPB0"
 		(shape input)
 		(at 233.68 63.5 180)
 		(fields_autoplaced yes)
@@ -8057,7 +8077,7 @@
 		)
 		(uuid "3596ccbd-9a58-44bf-ab0b-e32b4d15ac67")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 211.2105 63.5 0)
+			(at 210.7872 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8353,9 +8373,9 @@
 			)
 		)
 	)
-	(global_label "CM4_TX_TO_PICO1"
+	(global_label "CM4_TX_TO_APPB0"
 		(shape input)
-		(at 172.72 95.25 180)
+		(at 166.37 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8365,7 +8385,7 @@
 		)
 		(uuid "6b1252e5-9839-4d35-8ddd-9c6726493e6d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.3953 95.25 0)
+			(at 146.622 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8397,9 +8417,9 @@
 			)
 		)
 	)
-	(global_label "CM4_RX_FROM_PICO1"
+	(global_label "CM4_RX_FROM_APPB0"
 		(shape input)
-		(at 172.72 102.87 180)
+		(at 166.37 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8409,7 +8429,7 @@
 		)
 		(uuid "6ea39b87-b40d-46da-9620-884ae16343c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 150.2505 102.87 0)
+			(at 143.4772 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8947,7 +8967,7 @@
 			)
 		)
 	)
-	(global_label "CM4_TX_TO_PICO1"
+	(global_label "CM4_TX_TO_APPB0"
 		(shape input)
 		(at 233.68 35.56 180)
 		(fields_autoplaced yes)
@@ -8959,7 +8979,7 @@
 		)
 		(uuid "d55e02a9-7f42-40f7-bde5-e19defc021a7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.3553 35.56 0)
+			(at 213.932 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9035,7 +9055,7 @@
 			)
 		)
 	)
-	(global_label "CM4_RX_FROM_PICO1"
+	(global_label "CM4_RX_FROM_APPB0"
 		(shape input)
 		(at 45.72 71.12 180)
 		(fields_autoplaced yes)
@@ -9047,7 +9067,7 @@
 		)
 		(uuid "dcac0d82-bf66-4a81-8bed-50b7e753e2c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.2505 71.12 0)
+			(at 22.8272 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9974,7 +9994,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 172.72 102.87 270)
+		(at 167.64 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9982,7 +10002,7 @@
 		(dnp no)
 		(uuid "71248856-1298-4f52-9826-45cb3d075fa4")
 		(property "Reference" "TP409"
-			(at 173.736 100.584 90)
+			(at 168.656 99.314 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9991,8 +10011,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Rx Disp Pico"
-			(at 177.8 104.1399 90)
+		(property "Value" "Rx App Board Pico0"
+			(at 172.72 102.8699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10021,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
-			(at 172.72 107.95 0)
+			(at 167.64 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10010,7 +10030,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 107.95 0)
+			(at 167.64 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10039,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 172.72 102.87 0)
+			(at 167.64 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11632,7 +11652,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 172.72 95.25 270)
+		(at 167.64 93.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11640,7 +11660,7 @@
 		(dnp no)
 		(uuid "c798ab4b-381b-4727-b7d4-7510954f6666")
 		(property "Reference" "TP408"
-			(at 173.736 92.964 90)
+			(at 168.656 91.694 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11649,8 +11669,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Tx Disp Pico"
-			(at 177.8 96.5199 90)
+		(property "Value" "Tx App Board Pico0"
+			(at 172.72 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11659,7 +11679,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
-			(at 172.72 100.33 0)
+			(at 167.64 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11668,7 +11688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 100.33 0)
+			(at 167.64 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11677,7 +11697,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 172.72 95.25 0)
+			(at 167.64 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)

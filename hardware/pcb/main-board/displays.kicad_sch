@@ -2304,7 +2304,7 @@
 		)
 		(uuid "ec881567-5f9c-428b-9db2-5a286149dd51")
 	)
-	(text "Signal from support RP2040 that the side displays should be turned on"
+	(text "Signal from support RP2040 that the application board should be turned on"
 		(exclude_from_sim no)
 		(at 71.628 25.654 0)
 		(effects
@@ -2381,7 +2381,7 @@
 		)
 		(uuid "b0e2efa3-8675-41c3-8a42-0c30db39cc87")
 	)
-	(text "UART connection from CM4 to display Pico"
+	(text "UART connection from CM4 to application board Pico0"
 		(exclude_from_sim no)
 		(at 71.374 44.704 0)
 		(effects
@@ -2524,7 +2524,7 @@
 			)
 		)
 	)
-	(global_label "CM4_RX_FROM_PICO1"
+	(global_label "CM4_RX_FROM_APPB0"
 		(shape input)
 		(at 58.42 45.72 180)
 		(fields_autoplaced yes)
@@ -2536,7 +2536,7 @@
 		)
 		(uuid "566241c6-93eb-4640-9e92-7b0e9ca10c7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.9505 45.72 0)
+			(at 35.5272 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2612,7 +2612,7 @@
 			)
 		)
 	)
-	(global_label "CM4_TX_TO_PICO1"
+	(global_label "CM4_TX_TO_APPB0"
 		(shape input)
 		(at 58.42 43.18 180)
 		(fields_autoplaced yes)
@@ -2624,7 +2624,7 @@
 		)
 		(uuid "951500d8-1df3-4e5a-8661-32d6522b71e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.0953 43.18 0)
+			(at 38.672 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2678,7 +2678,7 @@
 			)
 		)
 	)
-	(hierarchical_label "SIDE_DISPLAYS_ENABLE"
+	(hierarchical_label "APP_BOARD_ENABLE"
 		(shape input)
 		(at 58.42 25.4 180)
 		(effects
