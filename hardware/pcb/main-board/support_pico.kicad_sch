@@ -5081,7 +5081,7 @@
 			)
 		)
 	)
-	(global_label "RX_FROM_SP_RP"
+	(global_label "CM4_RX_FROM_SP_RP"
 		(shape output)
 		(at 113.03 71.12 0)
 		(fields_autoplaced yes)
@@ -5093,7 +5093,7 @@
 		)
 		(uuid "180b7c4c-4f38-4508-9591-d6a80df31b53")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.9033 71.12 0)
+			(at 135.8018 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5191,7 +5191,7 @@
 			)
 		)
 	)
-	(global_label "TX_TO_SP_RP"
+	(global_label "CM4_TX_TO_SP_RP"
 		(shape input)
 		(at 113.03 73.66 0)
 		(fields_autoplaced yes)
@@ -5203,7 +5203,7 @@
 		)
 		(uuid "3edd9639-62e1-45a7-ab65-bfc9eefcfb8a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.7585 73.66 0)
+			(at 132.657 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
