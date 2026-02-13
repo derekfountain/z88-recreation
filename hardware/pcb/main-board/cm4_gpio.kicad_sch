@@ -6441,6 +6441,10 @@
 		(uuid "71be2ed5-df27-4d24-ba37-b8cef7a484ba")
 	)
 	(no_connect
+		(at 233.68 53.34)
+		(uuid "767feb4e-92dd-4411-86de-caca438bfe1a")
+	)
+	(no_connect
 		(at 45.72 109.22)
 		(uuid "7e05887c-3057-43cc-b4a8-475b85130e48")
 	)
@@ -6479,6 +6483,10 @@
 	(no_connect
 		(at 106.68 149.86)
 		(uuid "c91be1ea-1953-401f-a6fc-c9b353826734")
+	)
+	(no_connect
+		(at 233.68 66.04)
+		(uuid "e7dd457a-9685-4887-ac52-01b89f4edb0d")
 	)
 	(no_connect
 		(at 106.68 33.02)
@@ -8175,28 +8183,6 @@
 			)
 		)
 	)
-	(global_label "CM4_GPIO9"
-		(shape input)
-		(at 233.68 53.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "440bf23b-0b36-4d5c-b244-3264b772096b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.7657 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SD_DAT1"
 		(shape input)
 		(at 231.14 125.73 180)
@@ -8589,28 +8575,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CM4_GPIO6"
-		(shape input)
-		(at 233.68 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9ce7c628-767b-446b-bc33-8451d1f4a379")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.7657 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
