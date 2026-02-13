@@ -2321,7 +2321,7 @@
 		)
 		(uuid "5c362bfb-3425-4b3d-b9d6-959b38deacef")
 	)
-	(text "Software connection from keyboard RP to application board Pico1"
+	(text "Software connection from keyboard RP to application board Pico2"
 		(exclude_from_sim no)
 		(at 72.39 74.93 0)
 		(effects
@@ -2332,7 +2332,7 @@
 		)
 		(uuid "66a0bbb5-3bc4-4eac-b007-a81aa3b32e4d")
 	)
-	(text "Software connection from support RP2040 to application board Pico1"
+	(text "Software connection from support RP2040 to application board Pico2"
 		(exclude_from_sim no)
 		(at 72.39 64.77 0)
 		(effects
@@ -2343,7 +2343,7 @@
 		)
 		(uuid "8177b5df-e088-48e2-8c8e-1fcf79745088")
 	)
-	(text "UART connection from support RP2040 to application board Pico0"
+	(text "UART connection from support RP2040 to application board Pico1"
 		(exclude_from_sim no)
 		(at 71.628 37.084 0)
 		(effects
@@ -2376,7 +2376,7 @@
 		)
 		(uuid "b0e2efa3-8675-41c3-8a42-0c30db39cc87")
 	)
-	(text "UART connection from keyboard RP to application board Pico0"
+	(text "UART connection from keyboard RP to application board Pico1"
 		(exclude_from_sim no)
 		(at 72.39 69.85 0)
 		(effects
@@ -2387,7 +2387,7 @@
 		)
 		(uuid "bc8db957-c778-4910-a4f6-30295ef2de4c")
 	)
-	(text "UART connection from CM4 to application board Pico0"
+	(text "UART connection from CM4 to application board Pico1"
 		(exclude_from_sim no)
 		(at 71.374 44.704 0)
 		(effects
@@ -2398,7 +2398,7 @@
 		)
 		(uuid "e1e97a9b-ab66-4af2-9c22-5a3f70bc9b61")
 	)
-	(global_label "APPB_PICO1_SWD_IO"
+	(global_label "APPB_PICO2_SWD_IO"
 		(shape input)
 		(at 58.42 58.42 180)
 		(fields_autoplaced yes)
@@ -2420,7 +2420,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_RX_FROM_APPB1"
+	(global_label "SP_RP_RX_FROM_APPB2"
 		(shape input)
 		(at 58.42 66.04 180)
 		(fields_autoplaced yes)
@@ -2442,7 +2442,7 @@
 			)
 		)
 	)
-	(global_label "APPB_PICO1_SWD_CLK"
+	(global_label "APPB_PICO2_SWD_CLK"
 		(shape input)
 		(at 58.42 55.88 180)
 		(fields_autoplaced yes)
@@ -2486,7 +2486,7 @@
 			)
 		)
 	)
-	(global_label "APPB_PICO0_SWD_CLK"
+	(global_label "APPB_PICO1_SWD_CLK"
 		(shape input)
 		(at 58.42 50.8 180)
 		(fields_autoplaced yes)
@@ -2508,7 +2508,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_APPB0"
+	(global_label "SP_RP_TX_TO_APPB1"
 		(shape input)
 		(at 58.42 35.56 180)
 		(fields_autoplaced yes)
@@ -2530,7 +2530,7 @@
 			)
 		)
 	)
-	(global_label "CM4_RX_FROM_APPB0"
+	(global_label "CM4_RX_FROM_APPB1"
 		(shape input)
 		(at 58.42 45.72 180)
 		(fields_autoplaced yes)
@@ -2596,7 +2596,7 @@
 			)
 		)
 	)
-	(global_label "KB_TX_TO_APPB1"
+	(global_label "KB_TX_TO_APPB2"
 		(shape input)
 		(at 58.42 73.66 180)
 		(fields_autoplaced yes)
@@ -2618,7 +2618,7 @@
 			)
 		)
 	)
-	(global_label "KB_RX_FROM_APPB0"
+	(global_label "KB_RX_FROM_APPB1"
 		(shape input)
 		(at 58.42 71.12 180)
 		(fields_autoplaced yes)
@@ -2640,7 +2640,7 @@
 			)
 		)
 	)
-	(global_label "KB_TX_TO_APPB0"
+	(global_label "KB_TX_TO_APPB1"
 		(shape input)
 		(at 58.42 68.58 180)
 		(fields_autoplaced yes)
@@ -2662,7 +2662,7 @@
 			)
 		)
 	)
-	(global_label "APPB_PICO0_SWD_IO"
+	(global_label "APPB_PICO1_SWD_IO"
 		(shape input)
 		(at 58.42 53.34 180)
 		(fields_autoplaced yes)
@@ -2684,7 +2684,7 @@
 			)
 		)
 	)
-	(global_label "CM4_TX_TO_APPB0"
+	(global_label "CM4_TX_TO_APPB1"
 		(shape input)
 		(at 58.42 43.18 180)
 		(fields_autoplaced yes)
@@ -2706,7 +2706,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_APPB1"
+	(global_label "SP_RP_TX_TO_APPB2"
 		(shape input)
 		(at 58.42 63.5 180)
 		(fields_autoplaced yes)
@@ -2728,7 +2728,7 @@
 			)
 		)
 	)
-	(global_label "KB_RX_FROM_APPB1"
+	(global_label "KB_RX_FROM_APPB2"
 		(shape input)
 		(at 58.42 76.2 180)
 		(fields_autoplaced yes)
@@ -2750,7 +2750,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_RX_FROM_APPB0"
+	(global_label "SP_RP_RX_FROM_APPB1"
 		(shape input)
 		(at 58.42 38.1 180)
 		(fields_autoplaced yes)

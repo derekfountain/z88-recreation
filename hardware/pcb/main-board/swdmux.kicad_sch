@@ -1406,7 +1406,7 @@
 		)
 		(uuid "b0fc14ee-fd64-4ca8-97ee-9672f7284286")
 	)
-	(global_label "APPB_PICO0_SWD_CLK"
+	(global_label "APPB_PICO1_SWD_CLK"
 		(shape output)
 		(at 96.52 83.82 0)
 		(fields_autoplaced yes)
@@ -1472,7 +1472,7 @@
 			)
 		)
 	)
-	(global_label "APPB_PICO1_SWD_IO"
+	(global_label "APPB_PICO2_SWD_IO"
 		(shape output)
 		(at 96.52 73.66 0)
 		(fields_autoplaced yes)
@@ -1516,7 +1516,7 @@
 			)
 		)
 	)
-	(global_label "APPB_PICO1_SWD_CLK"
+	(global_label "APPB_PICO2_SWD_CLK"
 		(shape output)
 		(at 96.52 86.36 0)
 		(fields_autoplaced yes)
@@ -1582,7 +1582,7 @@
 			)
 		)
 	)
-	(global_label "APPB_PICO0_SWD_IO"
+	(global_label "APPB_PICO1_SWD_IO"
 		(shape output)
 		(at 96.52 71.12 0)
 		(fields_autoplaced yes)

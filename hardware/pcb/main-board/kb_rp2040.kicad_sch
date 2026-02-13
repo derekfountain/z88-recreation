@@ -3967,7 +3967,7 @@
 		)
 		(uuid "ffed88a7-3f59-4119-adfe-a85e558d3ee9")
 	)
-	(text "Software connection to the application board's Pico1.\n(No UART available for this.)"
+	(text "Software connection to the application board's Pico2.\n(No UART available for this.)"
 		(exclude_from_sim no)
 		(at 144.78 124.46 0)
 		(effects
@@ -4000,7 +4000,7 @@
 		)
 		(uuid "27e31358-1cfc-44b6-9e8c-3b1622c62843")
 	)
-	(text "UART connection to the application board's Pico0"
+	(text "UART connection to the application board's Pico1"
 		(exclude_from_sim no)
 		(at 144.78 119.38 0)
 		(effects
@@ -4257,7 +4257,7 @@
 		)
 		(uuid "f4d81310-71d3-45ea-a902-bfe2c9295438")
 	)
-	(global_label "KB_TX_TO_APPB0"
+	(global_label "KB_TX_TO_APPB1"
 		(shape output)
 		(at 120.65 118.11 0)
 		(fields_autoplaced yes)
@@ -4455,7 +4455,7 @@
 			)
 		)
 	)
-	(global_label "KB_TX_TO_APPB1"
+	(global_label "KB_TX_TO_APPB2"
 		(shape output)
 		(at 120.65 123.19 0)
 		(fields_autoplaced yes)
@@ -4587,7 +4587,7 @@
 			)
 		)
 	)
-	(global_label "KB_RX_FROM_APPB0"
+	(global_label "KB_RX_FROM_APPB1"
 		(shape input)
 		(at 120.65 120.65 0)
 		(fields_autoplaced yes)
@@ -4609,7 +4609,7 @@
 			)
 		)
 	)
-	(global_label "KB_RX_FROM_APPB1"
+	(global_label "KB_RX_FROM_APPB2"
 		(shape input)
 		(at 120.65 125.73 0)
 		(fields_autoplaced yes)

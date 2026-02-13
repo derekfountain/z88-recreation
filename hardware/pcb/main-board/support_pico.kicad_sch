@@ -4604,7 +4604,7 @@
 		)
 		(uuid "0d16ee6d-a081-4b58-91ab-9b3ab537a6ae")
 	)
-	(text "Software link to App Board Pico1"
+	(text "Software link to App Board Pico2"
 		(exclude_from_sim no)
 		(at 138.43 87.63 0)
 		(effects
@@ -4659,7 +4659,7 @@
 		)
 		(uuid "9f83fe62-0866-47f2-9bbc-071e822f6f54")
 	)
-	(text "UART1 to App Board Pico0"
+	(text "UART1 to App Board Pico1"
 		(exclude_from_sim no)
 		(at 138.43 82.55 0)
 		(effects
@@ -5235,7 +5235,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_APPB0"
+	(global_label "SP_RP_TX_TO_APPB1"
 		(shape output)
 		(at 113.03 81.28 0)
 		(fields_autoplaced yes)
@@ -5455,7 +5455,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_APPB1"
+	(global_label "SP_RP_TX_TO_APPB2"
 		(shape output)
 		(at 113.03 86.36 0)
 		(fields_autoplaced yes)
@@ -5499,7 +5499,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_RX_FROM_APPB0"
+	(global_label "SP_RP_RX_FROM_APPB1"
 		(shape input)
 		(at 113.03 83.82 0)
 		(fields_autoplaced yes)
@@ -5521,7 +5521,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_RX_FROM_APPB1"
+	(global_label "SP_RP_RX_FROM_APPB2"
 		(shape input)
 		(at 113.03 88.9 0)
 		(fields_autoplaced yes)

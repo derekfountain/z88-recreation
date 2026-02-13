@@ -7889,7 +7889,7 @@
 			)
 		)
 	)
-	(global_label "CM4_TX_TO_APPB0"
+	(global_label "CM4_TX_TO_APPB1"
 		(shape output)
 		(at 45.72 96.52 180)
 		(fields_autoplaced yes)
@@ -9055,7 +9055,7 @@
 			)
 		)
 	)
-	(global_label "CM4_RX_FROM_APPB0"
+	(global_label "CM4_RX_FROM_APPB1"
 		(shape input)
 		(at 45.72 71.12 180)
 		(fields_autoplaced yes)
