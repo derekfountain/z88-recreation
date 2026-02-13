@@ -7801,6 +7801,28 @@
 			)
 		)
 	)
+	(global_label "CM4_TX_TO_APPB2"
+		(shape output)
+		(at 106.68 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0758ea70-9b78-46a5-b37b-abde09f2e8b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 126.428 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CM4_SELECT_SWD_B1"
 		(shape input)
 		(at 246.38 48.26 0)
@@ -8199,22 +8221,22 @@
 	)
 	(global_label "CM4_SWD_CLK"
 		(shape output)
-		(at 106.68 78.74 0)
+		(at 45.72 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4d73e46a-384a-4665-a1cc-bbd8907ea3f1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.3761 78.74 0)
+			(at 30.0239 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8483,28 +8505,6 @@
 			)
 		)
 	)
-	(global_label "CM4_GPIO6"
-		(shape output)
-		(at 45.72 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8f1f4282-dd6d-41f4-aa4c-d19ba50804ed")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 32.8057 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CM4_GPIO25"
 		(shape input)
 		(at 246.38 53.34 0)
@@ -8765,28 +8765,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CM4_GPIO9"
-		(shape output)
-		(at 45.72 78.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ba8903df-362e-4f61-8ff9-4e31ca978451")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 32.8057 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9354,6 +9332,28 @@
 		(uuid "fe3538f2-1832-4826-97c5-ec29e6a76858")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 218.528 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CM4_RX_FROM_APPB2"
+		(shape input)
+		(at 45.72 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff3f917f-02f4-4096-bf57-e2a72d586b40")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 22.8272 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)

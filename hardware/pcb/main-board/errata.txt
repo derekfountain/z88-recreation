@@ -409,3 +409,12 @@ there's also a signal to the application board SP_RP_SIG_TO_APPB
 which could be used as a switch to indicate which Pico the main board
 is talking to. It would need a MUX on the application board.
 Not sure yet.
+
+
+
+I needed to move the CM4_SWD_CLK signal from CM4 GPIO8 to CM4 GPIO6.
+That frees up 8 and 9, which can now be used as a UART connection to
+the Application Board Pico2.
+: Done on v1.1 schematic
+
+
