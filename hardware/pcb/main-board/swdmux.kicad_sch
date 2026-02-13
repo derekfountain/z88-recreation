@@ -1406,7 +1406,7 @@
 		)
 		(uuid "b0fc14ee-fd64-4ca8-97ee-9672f7284286")
 	)
-	(global_label "DISPLAY_PICO1_SWD_CLK"
+	(global_label "APPB_PICO0_SWD_CLK"
 		(shape output)
 		(at 96.52 83.82 0)
 		(fields_autoplaced yes)
@@ -1418,7 +1418,7 @@
 		)
 		(uuid "04ee3822-304d-4730-a289-da1700f336d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.4972 83.82 0)
+			(at 119.8362 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1472,7 +1472,7 @@
 			)
 		)
 	)
-	(global_label "DISPLAY_PICO2_SWD_IO"
+	(global_label "APPB_PICO1_SWD_IO"
 		(shape output)
 		(at 96.52 73.66 0)
 		(fields_autoplaced yes)
@@ -1484,7 +1484,7 @@
 		)
 		(uuid "3ea23470-0576-4664-9359-5ae0f26607ab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.8644 73.66 0)
+			(at 118.2034 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,7 +1516,7 @@
 			)
 		)
 	)
-	(global_label "DISPLAY_PICO2_SWD_CLK"
+	(global_label "APPB_PICO1_SWD_CLK"
 		(shape output)
 		(at 96.52 86.36 0)
 		(fields_autoplaced yes)
@@ -1528,7 +1528,7 @@
 		)
 		(uuid "7803ebae-ed31-44a3-9e6e-3253a6327609")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.4972 86.36 0)
+			(at 119.8362 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1582,7 +1582,7 @@
 			)
 		)
 	)
-	(global_label "DISPLAY_PICO1_SWD_IO"
+	(global_label "APPB_PICO0_SWD_IO"
 		(shape output)
 		(at 96.52 71.12 0)
 		(fields_autoplaced yes)
@@ -1594,7 +1594,7 @@
 		)
 		(uuid "a170e46f-1d65-42c9-a593-4a6791782aee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.8644 71.12 0)
+			(at 118.2034 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)

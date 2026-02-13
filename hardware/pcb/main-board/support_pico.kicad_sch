@@ -5235,7 +5235,7 @@
 			)
 		)
 	)
-	(global_label "SP_RP_TX_TO_APPB_0"
+	(global_label "SP_RP_TX_TO_APPB0"
 		(shape output)
 		(at 113.03 81.28 0)
 		(fields_autoplaced yes)
@@ -5247,7 +5247,7 @@
 		)
 		(uuid "7cae1a54-0425-489b-b485-8703f58f00d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.8018 81.28 0)
+			(at 134.8342 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
