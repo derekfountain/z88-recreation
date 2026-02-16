@@ -92,7 +92,13 @@ int main()
   gpio_set_dir( LED_PIN, GPIO_OUT );
   gpio_put(LED_PIN, 1);
 
-  connect_to_application_board_pico1();
+  for( uint32_t i=0; i<3; i++ )
+  {
+    if( connect_to_application_board_pico1() )
+      break;
+      
+    sleep_ms(250);
+  }
 
   while(1)
   {

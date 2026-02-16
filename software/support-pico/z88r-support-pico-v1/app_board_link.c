@@ -80,7 +80,7 @@ void send_msg_to_application_board_pico1( uint8_t *msg )
   }
 }
 
-void connect_to_application_board_pico1( void )
+bool connect_to_application_board_pico1( void )
 {
   enable_application_board();
 
@@ -88,13 +88,13 @@ void connect_to_application_board_pico1( void )
   gpio_set_function( UART_RX_PIN, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_RX_PIN));
 
   if( uart_init( APPLICATION_BOARD_UART, UART_BAUD_RATE ) != UART_BAUD_RATE )
-    return;
+    return false;
 
   uart_set_hw_flow( APPLICATION_BOARD_UART, false, false );
 
   uart_configured = true;
 
-  return;
+  return true;
 }
 
 void disconnect_from_application_board_pico1( void )

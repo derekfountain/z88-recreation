@@ -32,7 +32,7 @@
 
 #define USING_UART_APP_BOARD_LINK 1
 
-void connect_to_application_board_pico1( void );
+bool connect_to_application_board_pico1( void );
 void disconnect_from_application_board_pico1( void );
 
 void send_msg_to_application_board_pico1( uint8_t *msg );
