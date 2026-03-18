@@ -418,3 +418,10 @@ the Application Board Pico2.
 : Done on v1.1 schematic
 
 
+
+Support Pico UART link to the application board is UART1 which I've
+managed to connect to GPIOs 11 and 12. UART1 is on *pins* 11 and 12,
+which are GPIOs 8 and 9. GPIOs 11 and 12 don't have a UART connected
+to them, so those connections are useless.
+: All this got sorted out for v1.1, so no action required, other than
+  to fix the v1.0 board I'm using.

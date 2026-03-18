@@ -29,6 +29,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include <pico/time.h>
 
 #include "hardware/uart.h"
 #include "hardware/gpio.h"
@@ -36,18 +37,24 @@
 static bool   uart_configured        = false;
 static bool   app_board_enabled      = false;
 
-/* v1.0, Support Pico UART to the application board Pico is wired up on UART1, pins 12 and 12 */
+static const uint32_t     ENABLE_APP_BOARD_PIN   = 15;
+
+/* v1.0, Support Pico UART to the application board Pico is wired up on UART1, GPIOs 8 and 9 */
 static       uart_inst_t *APPLICATION_BOARD_UART = uart1;
-static const uint32_t     UART_TX_PIN            = 11;
-static const uint32_t     UART_RX_PIN            = 12;
+static const uint32_t     UART_TX_GPIO           = 8;
+static const uint32_t     UART_RX_GPIO           = 9;
 static const uint32_t     UART_BAUD_RATE         = 115200;
 
 static void enable_application_board( void )
 {
   if( !app_board_enabled )
   {
-    // Set the gpio
-    // Pause to let the Picos come up
+    gpio_init( ENABLE_APP_BOARD_PIN );
+    gpio_set_dir( ENABLE_APP_BOARD_PIN, GPIO_OUT );
+    gpio_put(ENABLE_APP_BOARD_PIN, 1);
+
+    /* Pause to let the Picos come up */
+    sleep_ms(500);
 
     app_board_enabled = true;
   }
@@ -59,7 +66,10 @@ static void disable_application_board( void )
 {
   if( app_board_enabled )
   {
-    // Unset the gpio
+    gpio_put(ENABLE_APP_BOARD_PIN, 0);
+
+    /* Pause to let the power disconnect */
+    sleep_ms(10);
 
     app_board_enabled = false;
   }
@@ -84,11 +94,14 @@ bool connect_to_application_board_pico1( void )
 {
   enable_application_board();
 
-  gpio_set_function( UART_TX_PIN, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_TX_PIN) );
-  gpio_set_function( UART_RX_PIN, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_RX_PIN));
-
   if( uart_init( APPLICATION_BOARD_UART, UART_BAUD_RATE ) != UART_BAUD_RATE )
-    return false;
+  {
+
+  }
+//    return false;
+
+  gpio_set_function( UART_TX_GPIO, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_TX_GPIO) );
+  gpio_set_function( UART_RX_GPIO, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_RX_GPIO) );
 
   uart_set_hw_flow( APPLICATION_BOARD_UART, false, false );
 

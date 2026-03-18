@@ -92,24 +92,33 @@ int main()
   gpio_set_dir( LED_PIN, GPIO_OUT );
   gpio_put(LED_PIN, 1);
 
-  for( uint32_t i=0; i<3; i++ )
+  /* Sit trying to connect to the application board */
+  do
   {
+    sleep_ms(125);
+
+    gpio_put(LED_PIN, 0);
+
     if( connect_to_application_board_pico1() )
       break;
       
-    sleep_ms(250);
-  }
+    sleep_ms(125);
+
+    gpio_put(LED_PIN, 1);
+
+  } while(1);
+
 
   while(1)
   {
     gpio_put(LED_PIN, 1);
+    sleep_ms(1000);
 
 #if USING_UART_APP_BOARD_LINK
-    send_msg_to_application_board_pico1( "Hello, world!\r\n" );
+    send_msg_to_application_board_pico1( "Hello, world!\n" );
 #endif
 
     gpio_put(LED_PIN, 0);
-
-    sleep_ms(250);
+    sleep_ms(500);
   }
 }

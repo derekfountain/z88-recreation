@@ -59,12 +59,15 @@
  */
 
 #include <stdio.h>
+#include <stdint.h>
+#include <string.h>
+
 #include "pico.h"
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
-#include <stdint.h>
-#include <string.h>
 #include "hardware/i2c.h"
+#include "hardware/uart.h"
+#include "hardware/gpio.h"
 
 #include "font.h"
 #include "sh1106.h"
@@ -80,6 +83,39 @@ const uint LED_PIN              = PICO_DEFAULT_LED_PIN;
 #define PICO_DEFAULT_I2C_SDA_PIN 20
 #undef PICO_DEFAULT_I2C_SCL_PIN
 #define PICO_DEFAULT_I2C_SCL_PIN 21
+
+/* v1.0, Pico1 UART on the application board is wired up on UART0, pins 0 and 1 */
+static       uart_inst_t *APPLICATION_BOARD_UART = uart0;
+static const uint32_t     UART_TX_GPIO           = 0;
+static const uint32_t     UART_RX_GPIO           = 1;
+static const uint32_t     UART_BAUD_RATE         = 115200;
+static const uint32_t     UART_IRQ               = UART0_IRQ;
+
+// RX interrupt handler
+void on_uart_rx()
+{
+  static uint8_t str[32];
+  static uint32_t x = 0;
+
+  while( uart_is_readable(APPLICATION_BOARD_UART) )
+  {
+    uint8_t ch = uart_getc(APPLICATION_BOARD_UART);
+    if( ch == '\n' )
+    {
+      str[x] = 0;
+      SH1106_GotoXY(1,20);
+      SH1106_Puts(str, &Font_7x10, 1);
+      str[0] = 0;
+      x = 0;
+    }
+    else
+    {
+      str[x++] = ch;
+    }
+  }
+    
+  SH1106_UpdateScreen();
+}
 
 int main()
 {  
@@ -128,16 +164,41 @@ int main()
 
   /* Receiving end of UART link to main board */
 
+  uint ret;
+  if( (ret=uart_init( APPLICATION_BOARD_UART, UART_BAUD_RATE )) != UART_BAUD_RATE )
+  {
+    /*
+     * I don't really care what speed the UART ends up running at, and the uart_init()
+     * function rarely returns exactly 115200 anyway
+     */
+#if 0
+    SH1106_GotoXY(10,10);
+    uint8_t err[128]; sprintf(err, "%u", ret);
+    SH1106_Puts(err, &Font_7x10, 1);
+    SH1106_UpdateScreen();
+#endif
+  }
 
+  gpio_set_function( UART_TX_GPIO, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_TX_GPIO) );
+  gpio_set_function( UART_RX_GPIO, UART_FUNCSEL_NUM(APPLICATION_BOARD_UART, UART_RX_GPIO) );
 
+  /* No hardware flow is arranged on the board, the FIFO works well enough for speed control */
+  uart_set_hw_flow( APPLICATION_BOARD_UART, false, false );
+  uart_set_fifo_enabled( APPLICATION_BOARD_UART, true );
+
+  /* Set up the handler for UART receive bytes */
+  irq_set_exclusive_handler( UART_IRQ, on_uart_rx );
+  irq_set_enabled( UART_IRQ, true );
+
+  /* Now enable the UART to send interrupts - RX only */
+  uart_set_irqs_enabled( APPLICATION_BOARD_UART, true, false );
+
+  /* Infinite loop does nothing, let the interrupts handle everything */
   while(1)
   {
     gpio_put(LED_PIN, 1);
-
     sleep_ms(500);
-
     gpio_put(LED_PIN, 0);
-
     sleep_ms(500);
   }
 }
