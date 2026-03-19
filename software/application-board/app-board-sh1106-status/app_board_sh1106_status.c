@@ -98,34 +98,43 @@ void handle_support_message( uint8_t *msg )
   {
     SH1106_GotoXY(2,2);
     SH1106_Puts(msg+5, &Font_7x10, 1);
+    SH1106_UpdateScreen();
   }
   else if( strncmp( "TIME:", msg, 5 ) == 0 )
   {
     SH1106_GotoXY(72,2);
     SH1106_Puts(msg+5, &Font_7x10, 1);
+    SH1106_UpdateScreen();
   }
   else if( strncmp( "WIFI SSD:", msg, 9 ) == 0 )
   {
     SH1106_GotoXY(72,14);
     SH1106_Puts(msg+9, &Font_7x10, 1);
+    SH1106_UpdateScreen();
   }
   else if( strncmp( "WIFI PWR:", msg, 9 ) == 0 )
   {
     SH1106_GotoXY(72,26);
     SH1106_Puts(msg+9, &Font_7x10, 1);
+    SH1106_UpdateScreen();
   }
   else if( strncmp( "BATT:", msg, 5 ) == 0 )
   {
     SH1106_GotoXY(72,40);
     SH1106_Puts(msg+5, &Font_7x10, 1);
+    SH1106_UpdateScreen();
   }
   else if( strncmp( "OS:", msg, 3 ) == 0 )
   {
     SH1106_GotoXY(72,52);
     SH1106_Puts(msg+3, &Font_7x10, 1);
+    SH1106_UpdateScreen();
+  }
+  else if( strncmp( "PICO2:", msg, 5 ) == 0 )
+  {
+    // Send message to the other Pico? Needs transputer link
   }
 
-  SH1106_UpdateScreen();
 }
 
 /* UART Receive interrupt handler */

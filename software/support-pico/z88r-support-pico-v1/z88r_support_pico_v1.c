@@ -127,6 +127,9 @@ int main()
     send_msg_to_application_board_pico1( "BATT:74%\n" );
     sleep_ms(100);
     send_msg_to_application_board_pico1( "OS:5.10.17\n" );
+    sleep_ms(100);
+    /* This isn't supported at the other end as yet */
+    send_msg_to_application_board_pico1( "PICO2:PUTS:<NO SSD INSERTED>\n" );
 #endif
 
     gpio_put(LED_PIN, 0);
