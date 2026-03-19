@@ -91,21 +91,57 @@ static const uint32_t     UART_RX_GPIO           = 1;
 static const uint32_t     UART_BAUD_RATE         = 115200;
 static const uint32_t     UART_IRQ               = UART0_IRQ;
 
-// RX interrupt handler
+void handle_support_message( uint8_t *msg )
+{
+  /* Hard coded nonsense for now */
+  if( strncmp( "DATE:", msg, 5 ) == 0 )
+  {
+    SH1106_GotoXY(2,2);
+    SH1106_Puts(msg+5, &Font_7x10, 1);
+  }
+  else if( strncmp( "TIME:", msg, 5 ) == 0 )
+  {
+    SH1106_GotoXY(72,2);
+    SH1106_Puts(msg+5, &Font_7x10, 1);
+  }
+  else if( strncmp( "WIFI SSD:", msg, 9 ) == 0 )
+  {
+    SH1106_GotoXY(72,14);
+    SH1106_Puts(msg+9, &Font_7x10, 1);
+  }
+  else if( strncmp( "WIFI PWR:", msg, 9 ) == 0 )
+  {
+    SH1106_GotoXY(72,26);
+    SH1106_Puts(msg+9, &Font_7x10, 1);
+  }
+  else if( strncmp( "BATT:", msg, 5 ) == 0 )
+  {
+    SH1106_GotoXY(72,40);
+    SH1106_Puts(msg+5, &Font_7x10, 1);
+  }
+  else if( strncmp( "OS:", msg, 3 ) == 0 )
+  {
+    SH1106_GotoXY(72,52);
+    SH1106_Puts(msg+3, &Font_7x10, 1);
+  }
+
+  SH1106_UpdateScreen();
+}
+
+/* UART Receive interrupt handler */
 void on_uart_rx()
 {
   static uint8_t str[32];
   static uint32_t x = 0;
 
+  /* Receive a name:value\n tuple, call the handler with it */
   while( uart_is_readable(APPLICATION_BOARD_UART) )
   {
     uint8_t ch = uart_getc(APPLICATION_BOARD_UART);
     if( ch == '\n' )
     {
       str[x] = 0;
-      SH1106_GotoXY(1,20);
-      SH1106_Puts(str, &Font_7x10, 1);
-      str[0] = 0;
+      handle_support_message( str );
       x = 0;
     }
     else
@@ -113,8 +149,6 @@ void on_uart_rx()
       str[x++] = ch;
     }
   }
-    
-  SH1106_UpdateScreen();
 }
 
 int main()
@@ -132,21 +166,9 @@ int main()
   gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
   gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
     
-  sleep_ms( 500 );
+  sleep_ms( 200 );
 
   SH1106_Init();
-
-  SH1106_GotoXY(1,1);
-  SH1106_Puts("O", &Font_7x10, 1);
-
-  SH1106_GotoXY(120,1);
-  SH1106_Puts("O", &Font_7x10, 1);
-
-  SH1106_GotoXY(1,53);
-  SH1106_Puts("O", &Font_7x10, 1);
-
-  SH1106_GotoXY(120,53);
-  SH1106_Puts("O", &Font_7x10, 1);
 
   uint16_t x,y;
   for( x=0; x<128; x++ )
@@ -159,6 +181,18 @@ int main()
     SH1106_DrawPixel( 0,   y, 1);
     SH1106_DrawPixel( 127, y, 1);
   }
+
+  SH1106_GotoXY(2,14);
+  SH1106_Puts("WIFI SSD: ?", &Font_7x10, 1);
+
+  SH1106_GotoXY(2,26);
+  SH1106_Puts("WIFI PWR: ?", &Font_7x10, 1);
+
+  SH1106_GotoXY(2,40);
+  SH1106_Puts("BATTERY:  ?", &Font_7x10, 1);
+
+  SH1106_GotoXY(2,52);
+  SH1106_Puts("LINUX:    ?", &Font_7x10, 1);
 
   SH1106_UpdateScreen();
 

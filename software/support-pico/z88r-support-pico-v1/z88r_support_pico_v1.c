@@ -115,7 +115,18 @@ int main()
     sleep_ms(1000);
 
 #if USING_UART_APP_BOARD_LINK
-    send_msg_to_application_board_pico1( "Hello, world!\n" );
+    /* These strings are just name:value pairs for now. */
+    send_msg_to_application_board_pico1( "DATE:19/03/26\n" );
+    sleep_ms(100);
+    send_msg_to_application_board_pico1( "TIME:17:29\n" );
+    sleep_ms(100);
+    send_msg_to_application_board_pico1( "WIFI SSD:del2019\n" );
+    sleep_ms(100);
+    send_msg_to_application_board_pico1( "WIFI PWR:91%\n" );
+    sleep_ms(100);
+    send_msg_to_application_board_pico1( "BATT:74%\n" );
+    sleep_ms(100);
+    send_msg_to_application_board_pico1( "OS:5.10.17\n" );
 #endif
 
     gpio_put(LED_PIN, 0);
